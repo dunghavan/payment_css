@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VCloudCam</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Description here">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/payment.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900&amp;amp;subset=vietnamese" rel="stylesheet" type="text/css">
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="t-vcloud-payment">
+    <!-- Section Element-->
+    <div class="bl-panel-control" id="draggable" style="display:none">
+      <div class="panel-control-head">
+        <h4>Bảng điều khiển</h4><i class="icon icon-close-sm"></i>
+      </div>
+      <div class="panel-control-body">
+        <div class="txt">Xoay</div>
+        <div class="bl-control"><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-tl"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-t"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-tr"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-l"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-m"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-r"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-bl"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-b"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-br"></i></a>
+        </div>
+        <div class="txt">Phóng to, thu nhỏ</div>
+        <div class="bl-zoom"><a class="btn btn-white btn-icon" href="#"><i class="icon icon-zoomIn"></i></a><a class="btn btn-white btn-icon" href="#"><i class="icon icon-zoomOut"></i></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Section Element-->
+    <div class="s-wrapper">
+      <!-- NavBar-->
+      <section class="s-navbar">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            
+            <a class="navbar-brand" href="#">VCloudCam</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr">
+                <li class="nav-item"><a class="nav-link active" href="#">TẤT CẢ CAMERA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CAMERA THƯỜNG XEM</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CHIA SẺ VỚI TÔI</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">CỤM CAMERA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">BẢN ĐỒ CAMERA</a></li>
+                <li class="nav-item dropdown not-carret"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">THIẾT LẬP <i class="icon icon-setting"></i></a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Thiết lập vBox</a><a class="dropdown-item" href="#">Thiết lập camera và dịch vụ</a><a class="dropdown-item" href="#">Quản trị người dùng</a><a class="dropdown-item" href="#">Quản trị phân quyền</a><a class="dropdown-item" href="#">Quản trị camera</a><a class="dropdown-item" href="#">Quản trị cụm camera</a><a class="dropdown-item" href="#">Lịch sử truy cập</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mf">
+                <li class="nav-item"><a class="btn btn-primary" href="#">MUA DỊCH VỤ</a></li>
+                <li class="nav-item dropdown dropdown-wallet"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-wallet"></i> 100.000</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Wallet 1</a><a class="dropdown-item" href="#">Wallet 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, Trang</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Đổi mật khẩu</a><a class="dropdown-item" href="#">Đăng xuất</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- End NavBar-->
+      <!-- Body-->
+      <section class="s-body s-body-fluid">
+        <!-- Section Dashboard-->
+        <div class="s-dashboard">
+          <div class="container">
+            <div class="row  flex-lg-row-reverse full-h">
+              <div class="col  col-body-fluid">
+                <!-- section camera-->
+                <div class="s-camera">
+                  <div class="bl-head text-right">
+                    <!-- list view-->
+                    <div class="bl-list-view">
+                      <button class="btn btn-lg btn-toggle" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <div class="handle"></div>
+                      </button>
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id2"/><i class="icon icon-view1"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id3"/><i class="icon icon-view2"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id4"/><i class="icon icon-view3"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id5"/><i class="icon icon-view4"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- # list view-->
+                  </div>
+                  <div class="bl-body">
+                    <div class="bl-video-cam">
+                      <!-- player-->
+                      <div class="bl-video-js">
+                        <video class="video-js video-js vjs-default-skin" id="video-default" poster="https://vjs.zencdn.net/v/oceans.png" controls="controls" preload="none" data-setup="{ }">
+                          <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4"/>
+                        </video>
+                        <div class="wrap-top-video">
+                          <div class="bl-real-time">Thứ 3 ,13/11/2018  14:08:05</div>
+                          <div class="bl-top-video"><i class="icon icon-favorite"></i></div>
+                        </div>
+                      </div>
+                      <!-- # player-->
+                      <div class="bl-player-foot d-flex justify-content-between align-items-center">
+                        <h1> <i class="online"></i>CAM NHÀ BẾP<small><span>•</span>Cụm cam nhà riêng</small></h1>
+                        <div class="bl-edit"><a class="btn btn-secondary btn-icon btn-ctrl" href="#"><i class="icon icon-ctrl"></i></a><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-replay"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bl-foot">
+                    <div class="txt-pag text-center">Đang xem 1 trong số 10 camera</div>
+                    <!-- pagination-->
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-pre-all"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-pre"></i></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-next"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-next-all"></i></a></li>
+                    </ul>
+                    <!-- # pagination-->
+                  </div>
+                </div>
+                <!-- # section camera-->
+              </div>
+              <div class="col  col-nav-right">
+                <!-- navbar right-->
+                <div class="navbar-right"><a class="btn btn-square btn-secondary menu-trigger" href="#"><i class="icon icon-slide-toggle"></i></a>
+                  <div class="g-title">
+                    <h1 class="nav-title">CỤM CAMERA</h1><a class="btn btn-small btn-outline" href="#"> + Thêm cụm</a>
+                  </div>
+                  <!-- block collapse-->
+                  <div class="bl-collapse">
+                    <div class="collapse-row" data-toggle="collapse" data-target="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1">Cụm cam nhà riêng</div>
+                    <div class="collapse show" id="collapse-1">
+                      <ul class="list-group"><a class="list-group-item active" href="#">Cam nhà bếp</a><a class="list-group-item" href="#">Cam phòng khách</a>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- # block collapse-->
+                  <!-- block collapse-->
+                  <div class="bl-collapse">
+                    <div class="collapse-row" data-toggle="collapse" data-target="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">Cụm cam công ty</div>
+                    <div class="collapse show" id="collapse-2">
+                      <ul class="list-group"><a class="list-group-item" href="#">Cam bãi đỗ xe</a><a class="list-group-item" href="#">Cam cửa ra vào</a>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- # block collapse-->
+                </div>
+                <!-- # navbar right-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- # Section Dashboard-->
+      </section>
+      <!-- End Body-->
+    </div>
+    <!-- Modal thong bao-->
+    <div class="modal fade" id="modal-alert-update" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-alert" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">THÔNG BÁO</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="txt-w"> 
+              <p>Bạn có chắc chắn muốn cập nhật vBox hay không?</p>
+            </div>
+            <div class="g-button"><a class="btn btn-invert btn-form" href="#">Có</a><a class="btn btn-outline-invert btn-form" href="#">Không</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- # Modal thong bao cap nhat-->
+    <!-- Modal thong bao khoi dong-->
+    <div class="modal fade" id="modal-alert-restart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-alert" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">THÔNG BÁO</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="txt-w"> 
+              <p>Camera không hỗ trợ chức năng này.</p>
+            </div>
+            <div class="g-button"><a class="btn btn-invert btn-form" href="#" data-dismiss="modal">Ok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- # Modal thong bao khoi dong-->
+    <!-- Include JS-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+    <script>
+      (function() {
+      	var $body = document.body
+      	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+      	if ( typeof $menu_trigger !== 'undefined' ) {
+      		$menu_trigger.addEventListener('click', function() {
+      			$body.classList.toggle("menu-active");
+      		});
+      	}
+      }).call(this);
+      if(window.innerWidth < 980){
+      	$("body").addClass("menu-active");
+      }
+      
+      $('.btn-ctrl').click(function(){
+      	console.log("aaa");
+      	$("body").addClass("menu-active");
+      	$(".bl-panel-control").fadeIn();
+      	$(".bl-video-cam, .bl-head").addClass("w70");
+      });
+      $('.icon-close-sm').click(function(){
+      	$(".bl-panel-control").fadeOut();
+      	$("body").removeClass("menu-active");
+      	$(".bl-video-cam, .bl-head").removeClass("w70");
+      });
+      
+      $( function() {
+      	$( "#draggable" ).draggable();
+      } );
+      
+      $(window).on('load',function(){
+      	$('#modal-alert-restart').modal('show');
+      });
+    </script>
+  </body>
+</html>

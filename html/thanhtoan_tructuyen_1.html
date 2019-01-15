@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VCloudCam</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Description here">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/payment.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900&amp;amp;subset=vietnamese" rel="stylesheet" type="text/css">
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="t-vcloud-payment">
+    <div class="s-wrapper">
+      <!-- NavBar-->
+      <section class="s-navbar">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            
+            <a class="navbar-brand" href="#">VCloudCam</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mf">
+                <li class="nav-item"><a class="btn btn-primary" href="#">MUA DỊCH VỤ</a></li>
+                <li class="nav-item dropdown dropdown-wallet"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icon icon-wallet"></i> 100.000</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Wallet 1</a><a class="dropdown-item" href="#">Wallet 2</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, Trang</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Đổi mật khẩu</a><a class="dropdown-item" href="#">Đăng xuất</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- End NavBar-->
+      <!-- Body-->
+      <section class="s-body">
+        <!-- Section Dashboard-->
+        <div class="s-dashboard">
+          <div class="container">
+            <div class="row ">
+              <div class="col  col-max">
+                <!-- Section Payment-->
+                <div class="s-payment">
+                  <div class="s-title d-flex justify-content-between"><span>Thanh toán</span></div>
+                  <div class="bl-wraper">
+                    <!-- thong tin khac hang-->
+                    <h4 class="title-p">Thông tin khách hàng</h4>
+                    <div class="bl-info-customer">
+                      <div class="row-cus"><i class="icon icon-user"></i>Nguyễn Văn A</div>
+                      <div class="row-cus"><i class="icon icon-phone"></i>0909.000.000</div>
+                      <div class="row-cus"><i class="icon icon-mail"></i>nutbam@gmail.com</div>
+                      <div class="row-cus"><i class="icon icon-store"></i>Cửa hàng Nút bấm</div>
+                    </div>
+                    <!-- # thong tin khac hang-->
+                    <!-- chi tiet don hang-->
+                    <h4 class="title-p">Chi tiết đơn hàng</h4>
+                    <table class="table table-order pr">
+                      <thead>
+                        <tr>
+                          <th>Mô tả</th>
+                          <th class="text-right">Giá tiền</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Gói HD (2 ngày) x 2 x 3 tháng</td>
+                          <td class="text-right">15.000</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end bl-total">
+                      <div class="col-lg-4">
+                        <div class="row  txt-small">
+                          <div class="col-7">Tạm tính:</div>
+                          <div class="col-5 text-secondary">150.000</div>
+                        </div>
+                        <div class="row  txt-small">
+                          <div class="col-7">Thuế giá trị gia tăng:</div>
+                          <div class="col-5 text-secondary">18.000</div>
+                        </div>
+                        <div class="row  txt-small">
+                          <div class="col-6">Mã giảm giá:</div>
+                          <div class="col-6">
+                            <input class="form-control" type="text" placeholder="Nhập mã"/>
+                          </div>
+                        </div>
+                        <div class="row  border-top">
+                          <div class="col-7 text-secondary">THÀNH TIỀN:</div>
+                          <div class="col-5 text-secondary">168.000</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row-check">
+                      <div class="custom-control custom-checkbox checkBill">
+                        <input class="custom-control-input" type="checkbox" id="idcp9" name="checkboxs"/>
+                        <label class="custom-control-label" for="idcp9">Yêu cầu xuất hóa đơn</label>
+                      </div>
+                    </div>
+                    <div id="formCheck" style="display: none">
+                      <h4 class="title-p">Thông tin xuất hóa đơn</h4>
+                      <div class="bl-form-bill">
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Tên công ty: *</div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder=""/>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Địa chỉ công ty: *</div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder=""/>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Mã số thuế: *</div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder=""/>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Số điện thoại: *</div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder=""/>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Lĩnh vực hoạt động: *</div>
+                          <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder=""/>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Địa chỉ nhận hóa đơn: *</div>
+                          <div class="col-md-8">
+                            <textarea class="form-control" placeholder=""></textarea>
+                          </div>
+                        </div>
+                        <div class="row ">
+                          <div class="col-md-4 text-right">Ghi chú: </div>
+                          <div class="col-md-8">
+                            <textarea class="form-control" placeholder=""></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- # chi tiet don hang-->
+                    <!-- hinh thuc thanh toan-->
+                    <h4 class="title-p">Chọn hình thức thanh toán</h4>
+                    <!-- tab nav-->
+                    <div class="bl-method-payment nav nav-tabs" id="nav-tab" role="tablist"><a class="bl-method" href="#tab-mt1" data-toggle="tab" role="tab" aria-selected="true">
+                        <h4>Thanh toán trực tuyến<small>Thẻ ATM nội địa, Visa, Master Card</small></h4></a><a class="bl-method" href="#tab-mt3" data-toggle="tab" role="tab" aria-selected="false">
+                        <h4>Thanh toán qua Zalo Pay<small>Sử dụng Zalo Pay để thanh toán</small></h4></a></div>
+                    <!-- # tab nav-->
+                    <!-- tab content-->
+                    <div class="tab-content tab-method" id="nav-tabContent">
+                      <div class="tab-pane fade" id="tab-mt1" role="tabpanel">
+                        <div class="row justify-content-end footer-payment">
+                          <div class="col-lg-4 text-right"><a class="btn btn-outline btn-form" href="#">HỦY</a><a class="btn btn-secondary btn-form" href="#">TIẾP TỤC</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane fade" id="tab-mt3" role="tabpanel">
+                        <div class="bl-support-za"><i class="icon icon-info-p"></i>Hướng dẫn thanh toán qua <a href="#" class="txt-secondary">Zalo Pay</a></div>
+                        <div class="row justify-content-end footer-payment">
+                          <div class="col-lg-4 text-right"><a class="btn btn-outline btn-form" href="#">HỦY</a><a class="btn btn-secondary btn-form" href="#">TIẾP TỤC</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- # tab content-->
+                    <!-- # hinh thuc thanh toan-->
+                  </div>
+                </div>
+                <!-- # Section Payment-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- # Section Dashboard-->
+      </section>
+      <!-- End Body-->
+    </div>
+    <!-- Include JS-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
+    <script>
+      $(".checkBill").click(function(){
+      	var checkBox = document.getElementById("idcp9");
+      	if (checkBox.checked == true){
+      		$("#formCheck").fadeIn();
+      	} else {
+      		$("#formCheck").fadeOut();
+      	}
+      })
+    </script>
+  </body>
+</html>
