@@ -1,0 +1,4794 @@
+@charset "UTF-8";
+@font-face {
+  font-family: SFUIText;
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/SF-UI-Text-Light.eot") format("embedded-opentype");
+  src: url("../fonts/SF-UI-Text-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-UI-Text-Light.woff") format("woff"), url("../fonts/SF-UI-Text-Light.ttf") format("ttf"), url("../fonts/SF-UI-Text-Light.svg#SFUIText") format("svg"); }
+
+@font-face {
+  font-family: SFUIText;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/SF-UI-Text-Regular.eot") format("embedded-opentype");
+  src: url("../fonts/SF-UI-Text-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-UI-Text-Regular.woff") format("woff"), url("../fonts/SF-UI-Text-Regular.ttf") format("ttf"), url("../fonts/SF-UI-Text-Regular.svg#SFUIText") format("svg"); }
+
+@font-face {
+  font-family: SFUIText;
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/SF-UI-Text-Medium.eot") format("embedded-opentype");
+  src: url("../fonts/SF-UI-Text-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-UI-Text-Medium.woff") format("woff"), url("../fonts/SF-UI-Text-Medium.ttf") format("ttf"), url("../fonts/SF-UI-Text-Medium.svg#SFUIText") format("svg"); }
+
+@font-face {
+  font-family: SFUIText;
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/SF-UI-Text-Bold.eot") format("embedded-opentype");
+  src: url("../fonts/SF-UI-Text-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/SF-UI-Text-Bold.woff") format("woff"), url("../fonts/SF-UI-Text-Bold.ttf") format("ttf"), url("../fonts/SF-UI-Text-Bold.svg#SFUIText") format("svg"); }
+
+.t-vcloud-payment a, .t-vcloud-payment .table-admin tbody tr, .t-vcloud-payment .bl-alphabet span {
+  -webkit-transition: all .35s ease 0s;
+  -o-transition: all .35s ease 0s;
+  transition: all .35s ease 0s; }
+
+.t-vcloud-payment {
+  min-height: 100vh;
+  font-family: "SFUIText", sans-serif;
+  font-weight: 400;
+  background-color: #f0fcff; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-payment {
+      padding-top: 20px; } }
+  .t-vcloud-payment a {
+    color: #13599F; }
+  .t-vcloud-payment a:hover {
+    text-decoration: none;
+    color: #104b86; }
+  .t-vcloud-payment .s-wrapper .s-body {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto; }
+  .t-vcloud-payment .s-wrapper .s-body-fluid {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto; }
+    .t-vcloud-payment .s-wrapper .s-body-fluid .container {
+      max-width: 100%; }
+  .t-vcloud-payment .s-wrapper .s-bg {
+    background: #13599F url(../images/bg_lines.png) no-repeat;
+    background-size: 100%; }
+  .t-vcloud-payment .s-wrapper .s-bg-white {
+    background: #f0fcff url(../images/bg_lines.png) no-repeat;
+    background-size: 100%; }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .container {
+      max-width: 98%; } }
+  .t-vcloud-payment .space {
+    height: 60px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .space {
+        height: 30px; } }
+  .t-vcloud-payment .space-h {
+    height: 30px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .space-h {
+        height: 20px; } }
+  .t-vcloud-payment .w-70 {
+    width: 70%; }
+  .t-vcloud-payment .btn {
+    height: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    padding: 0 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    text-shadow: 0px 0px rgba(0, 0, 0, 0);
+    font-size: 0.8125rem; }
+    .t-vcloud-payment .btn.dropdown-toggle {
+      padding-left: 5px;
+      padding-right: 5px; }
+  .t-vcloud-payment .btn-white {
+    color: #212529;
+    background-color: #fff;
+    border-color: #fff;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-white:hover {
+      color: #212529;
+      background-color: #ececec;
+      border-color: #e6e6e6; }
+    .t-vcloud-payment .btn-white:focus, .t-vcloud-payment .btn-white.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+    .t-vcloud-payment .btn-white.disabled, .t-vcloud-payment .btn-white:disabled {
+      color: #212529;
+      background-color: #fff;
+      border-color: #fff; }
+    .t-vcloud-payment .btn-white:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-white:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-white.dropdown-toggle {
+      color: #212529;
+      background-color: #e6e6e6;
+      border-color: #dfdfdf; }
+      .t-vcloud-payment .btn-white:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-white:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-white.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+  .t-vcloud-payment .btn-primary {
+    color: #fff;
+    background-color: #f84c41;
+    border-color: #f84c41;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-primary:hover {
+      color: #fff;
+      background-color: #f7291c;
+      border-color: #f61e10; }
+    .t-vcloud-payment .btn-primary:focus, .t-vcloud-payment .btn-primary.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+    .t-vcloud-payment .btn-primary.disabled, .t-vcloud-payment .btn-primary:disabled {
+      color: #fff;
+      background-color: #f84c41;
+      border-color: #f84c41; }
+    .t-vcloud-payment .btn-primary:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-primary:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #f61e10;
+      border-color: #f01709; }
+      .t-vcloud-payment .btn-primary:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-primary:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-primary.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+  .t-vcloud-payment .btn-outline-primary {
+    color: #f84c41;
+    background-color: transparent;
+    background-image: none;
+    border-color: #f84c41;
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-outline-primary:hover {
+      color: #fff;
+      background-color: #f84c41;
+      border-color: #f84c41; }
+    .t-vcloud-payment .btn-outline-primary:focus, .t-vcloud-payment .btn-outline-primary.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+    .t-vcloud-payment .btn-outline-primary.disabled, .t-vcloud-payment .btn-outline-primary:disabled {
+      color: #f84c41;
+      background-color: transparent; }
+    .t-vcloud-payment .btn-outline-primary:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-outline-primary:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-outline-primary.dropdown-toggle {
+      color: #fff;
+      background-color: #f84c41;
+      border-color: #f84c41; }
+      .t-vcloud-payment .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-outline-primary.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+  .t-vcloud-payment .btn-secondary {
+    color: #fff;
+    background-color: #13599F;
+    border-color: #13599F;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 0px;
+    -webkit-box-shadow: 0 0 0 transparent;
+    box-shadow: 0 0 0 transparent; }
+    .t-vcloud-payment .btn-secondary:hover {
+      color: #fff;
+      background-color: #0f467d;
+      border-color: #0e4071; }
+    .t-vcloud-payment .btn-secondary:focus, .t-vcloud-payment .btn-secondary.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5); }
+    .t-vcloud-payment .btn-secondary.disabled, .t-vcloud-payment .btn-secondary:disabled {
+      color: #fff;
+      background-color: #13599F;
+      border-color: #13599F; }
+    .t-vcloud-payment .btn-secondary:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-secondary:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-secondary.dropdown-toggle {
+      color: #fff;
+      background-color: #0e4071;
+      border-color: #0c3966; }
+      .t-vcloud-payment .btn-secondary:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-secondary:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-secondary.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5); }
+  .t-vcloud-payment .btn-outline-secondary {
+    color: #13599F;
+    background-color: transparent;
+    background-image: none;
+    border-color: #13599F;
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-outline-secondary:hover {
+      color: #fff;
+      background-color: #13599F;
+      border-color: #13599F; }
+    .t-vcloud-payment .btn-outline-secondary:focus, .t-vcloud-payment .btn-outline-secondary.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5); }
+    .t-vcloud-payment .btn-outline-secondary.disabled, .t-vcloud-payment .btn-outline-secondary:disabled {
+      color: #13599F;
+      background-color: transparent; }
+    .t-vcloud-payment .btn-outline-secondary:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-outline-secondary:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-outline-secondary.dropdown-toggle {
+      color: #fff;
+      background-color: #13599F;
+      border-color: #13599F; }
+      .t-vcloud-payment .btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-outline-secondary.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(19, 89, 159, 0.5); }
+  .t-vcloud-payment .btn-danger {
+    color: #fff;
+    background-color: #F84C41;
+    border-color: #F84C41;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-danger:hover {
+      color: #fff;
+      background-color: #f7291c;
+      border-color: #f61e10; }
+    .t-vcloud-payment .btn-danger:focus, .t-vcloud-payment .btn-danger.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+    .t-vcloud-payment .btn-danger.disabled, .t-vcloud-payment .btn-danger:disabled {
+      color: #fff;
+      background-color: #F84C41;
+      border-color: #F84C41; }
+    .t-vcloud-payment .btn-danger:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-danger:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-danger.dropdown-toggle {
+      color: #fff;
+      background-color: #f61e10;
+      border-color: #f01709; }
+      .t-vcloud-payment .btn-danger:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-danger:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-danger.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+  .t-vcloud-payment .btn-outline-danger {
+    color: #F84C41;
+    background-color: transparent;
+    background-image: none;
+    border-color: #F84C41;
+    border-radius: 0px; }
+    .t-vcloud-payment .btn-outline-danger:hover {
+      color: #fff;
+      background-color: #F84C41;
+      border-color: #F84C41; }
+    .t-vcloud-payment .btn-outline-danger:focus, .t-vcloud-payment .btn-outline-danger.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+    .t-vcloud-payment .btn-outline-danger.disabled, .t-vcloud-payment .btn-outline-danger:disabled {
+      color: #F84C41;
+      background-color: transparent; }
+    .t-vcloud-payment .btn-outline-danger:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-outline-danger:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-outline-danger.dropdown-toggle {
+      color: #fff;
+      background-color: #F84C41;
+      border-color: #F84C41; }
+      .t-vcloud-payment .btn-outline-danger:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-outline-danger.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(248, 76, 65, 0.5); }
+  .t-vcloud-payment .btn-lg {
+    height: 67.5px;
+    line-height: 65.25px;
+    padding: 0 48px;
+    font-size: 1.21875rem; }
+  .t-vcloud-payment .btn-sm {
+    height: 25px;
+    line-height: 22px;
+    margin-left: 10px;
+    padding: 0 5px;
+    border-radius: 0px;
+    text-transform: none;
+    font-size: 1rem; }
+  .t-vcloud-payment .btn-form {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 0px;
+    height: 47px;
+    line-height: 48px;
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0);
+    margin-left: 5px;
+    margin-right: 5px; }
+  .t-vcloud-payment .btn-outline {
+    border: 2px solid #13599F;
+    color: #13599F;
+    line-height: 45px;
+    border-radius: 0; }
+    .t-vcloud-payment .btn-outline:hover {
+      background-color: #AECBE2; }
+  .t-vcloud-payment .btn-invert {
+    background-color: #F4FDFF;
+    border: 2px solid #AECBE2;
+    color: #13599F; }
+    .t-vcloud-payment .btn-invert:hover {
+      border-color: #fff; }
+  .t-vcloud-payment .btn-outline-invert {
+    background-color: transparent;
+    border: 2px solid #AECBE2;
+    color: #F4FDFF; }
+    .t-vcloud-payment .btn-outline-invert:hover {
+      color: #fff;
+      border-color: #fff; }
+  .t-vcloud-payment .btn-group {
+    border-color: #13599F;
+    color: #13599F;
+    height: 40px;
+    line-height: 38px;
+    font-weight: 400;
+    font-size: 0.875rem;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .t-vcloud-payment .btn-group.active {
+      background-color: #13599F;
+      color: #fff; }
+  .t-vcloud-payment .btn-square {
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 0px;
+    width: 45px;
+    height: 40px;
+    line-height: 36px; }
+    .t-vcloud-payment .btn-square i {
+      margin-right: 0; }
+  .t-vcloud-payment .btn-medium {
+    height: 37px;
+    line-height: 37px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px; }
+  .t-vcloud-payment .btn-live {
+    height: 40px;
+    line-height: 38px;
+    margin-left: 10px;
+    border-color: #13599F;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: none;
+    font-size: 16px; }
+    .t-vcloud-payment .btn-live:before {
+      display: inline-block;
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      margin-right: 8px;
+      margin-top: -2px;
+      background-color: #13599F;
+      vertical-align: middle; }
+    .t-vcloud-payment .btn-live.btn-secondary:before {
+      background-color: #fff !important; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .btn-live {
+        margin-left: 0 !important;
+        margin-right: 0px !important;
+        width: 100%; } }
+  .t-vcloud-payment .btn-download {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 15px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-transform: none; }
+  .t-vcloud-payment .btn-download-cl {
+    font-size: 16px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-transform: none;
+    background-color: #13599F;
+    color: #fff;
+    display: inline-block;
+    min-width: 130px;
+    text-align: center; }
+    .t-vcloud-payment .btn-download-cl:before {
+      display: inline-block;
+      content: "";
+      background-image: url(../images/icon_cloud.png);
+      width: 35px;
+      height: 35px;
+      background-size: 50%;
+      border-radius: 50%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-right: 0;
+      margin-top: -2px;
+      vertical-align: middle; }
+    .t-vcloud-payment .btn-download-cl:after {
+      display: none !important; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .btn-download-cl {
+        margin-left: 0;
+        margin-top: 10px; } }
+  .t-vcloud-payment .btn-submit {
+    border-radius: 0px; }
+  .t-vcloud-payment .btn-check {
+    width: 40px;
+    height: 40px;
+    line-height: auto;
+    padding: 3px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+    border: 2px solid #145faa;
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+    border-radius: 0px !important;
+    position: relative; }
+    .t-vcloud-payment .btn-check .icon {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      top: 2px;
+      left: 2px; }
+    .t-vcloud-payment .btn-check.active {
+      background-color: #13599F; }
+      .t-vcloud-payment .btn-check.active .icon-view1 {
+        background-image: url(../images/view1_active.png); }
+      .t-vcloud-payment .btn-check.active .icon-view2 {
+        background-image: url(../images/view2_active.png); }
+      .t-vcloud-payment .btn-check.active .icon-view3 {
+        background-image: url(../images/view3_active.png); }
+      .t-vcloud-payment .btn-check.active .icon-view4 {
+        background-image: url(../images/view4_active.png); }
+  .t-vcloud-payment .btn-status {
+    color: #F1FCFF;
+    background-color: transparent;
+    background-image: none;
+    border-color: #F1FCFF;
+    min-width: 110px;
+    border-radius: 0px;
+    border: 1px solid #AACAE2 !important;
+    color: #f84c41 !important;
+    font-size: 13px;
+    font-weight: normal;
+    position: relative; }
+    .t-vcloud-payment .btn-status:hover {
+      color: #13599F;
+      background-color: #F1FCFF;
+      border-color: #F1FCFF; }
+    .t-vcloud-payment .btn-status:focus, .t-vcloud-payment .btn-status.focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(241, 252, 255, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(241, 252, 255, 0.5); }
+    .t-vcloud-payment .btn-status.disabled, .t-vcloud-payment .btn-status:disabled {
+      color: #F1FCFF;
+      background-color: transparent; }
+    .t-vcloud-payment .btn-status:not(:disabled):not(.disabled):active, .t-vcloud-payment .btn-status:not(:disabled):not(.disabled).active,
+    .show > .t-vcloud-payment .btn-status.dropdown-toggle {
+      color: #212529;
+      background-color: #F1FCFF;
+      border-color: #F1FCFF; }
+      .t-vcloud-payment .btn-status:not(:disabled):not(.disabled):active:focus, .t-vcloud-payment .btn-status:not(:disabled):not(.disabled).active:focus,
+      .show > .t-vcloud-payment .btn-status.dropdown-toggle:focus {
+        -webkit-box-shadow: 0 0 0 0.2rem rgba(241, 252, 255, 0.5);
+        box-shadow: 0 0 0 0.2rem rgba(241, 252, 255, 0.5); }
+    .t-vcloud-payment .btn-status:before {
+      display: inline-block;
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+      vertical-align: middle;
+      background: url(../images/icon_un_ac.png) no-repeat;
+      background-size: 100%; }
+    .t-vcloud-payment .btn-status.active {
+      color: #13599F !important; }
+      .t-vcloud-payment .btn-status.active:before {
+        background-image: url(../images/icon_ac.png); }
+  .t-vcloud-payment .btn-icon {
+    height: 38px;
+    width: 38px;
+    line-height: 35px;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px; }
+    .t-vcloud-payment .btn-icon .icon {
+      margin: 0;
+      width: 20px;
+      height: 20px; }
+  .t-vcloud-payment .btn-edit {
+    text-transform: none;
+    background-color: #13599F;
+    color: #fff;
+    margin-left: 12px;
+    height: 28px;
+    line-height: 27px;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .t-vcloud-payment .btn-edit:hover {
+      background-color: #104c88;
+      color: #fff; }
+    .t-vcloud-payment .btn-edit .icon-edit {
+      background-image: url(../images/icon_edit_white.png); }
+  .t-vcloud-payment .btn-price {
+    border-width: 3px;
+    line-height: 41px;
+    text-transform: none;
+    position: relative; }
+    .t-vcloud-payment .btn-price:after {
+      display: inline-block;
+      content: "";
+      width: 8px;
+      height: 10px;
+      background: url(../images/icon_caret_next_small.png) no-repeat;
+      background-size: 100%;
+      margin-left: 7px;
+      vertical-align: middle;
+      margin-top: -2px; }
+  .t-vcloud-payment .btn-null {
+    background-color: transparent;
+    border-color: transparent;
+    color: #13599F; }
+  .t-vcloud-payment .form-control {
+    background-color: transparent;
+    height: 40px;
+    font-size: 16px;
+    color: #13599F;
+    border-width: 2px;
+    border-color: #13599F;
+    border-radius: 0px; }
+    .t-vcloud-payment .form-control::-webkit-input-placeholder {
+      color: #2f69b6; }
+    .t-vcloud-payment .form-control:-ms-input-placeholder {
+      color: #2f69b6; }
+    .t-vcloud-payment .form-control::-ms-input-placeholder {
+      color: #2f69b6; }
+    .t-vcloud-payment .form-control::placeholder {
+      color: #2f69b6; }
+    .t-vcloud-payment .form-control:focus {
+      border-color: #AECBE2; }
+    .t-vcloud-payment .form-control.no-edit {
+      opacity: .5; }
+  .t-vcloud-payment .form-error {
+    color: red;
+    margin-bottom: 7px;
+    font-size: 0.875rem;
+    margin-top: 5px;
+    display: block;
+    width: 100%; }
+  .t-vcloud-payment .has-icon.form-group {
+    position: relative;
+    margin-bottom: 15px; }
+    .t-vcloud-payment .has-icon.form-group .form-control {
+      padding-left: 28px; }
+    .t-vcloud-payment .has-icon.form-group .icon {
+      position: absolute;
+      top: 14px;
+      left: 10px; }
+  .t-vcloud-payment .custom-select {
+    color: #13599F; }
+  .t-vcloud-payment .f-alert {
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-size: 0.6875rem;
+    color: #F84C41;
+    font-style: italic; }
+  .t-vcloud-payment .col-md-12 .f-alert {
+    margin-top: -15px; }
+  .t-vcloud-payment .form-group {
+    margin-bottom: 1.5rem; }
+  .t-vcloud-payment .not-account {
+    padding-top: 0px;
+    font-size: 13px;
+    margin-bottom: 25px;
+    margin-top: -10px; }
+  .t-vcloud-payment .table tbody {
+    width: 100%; }
+  .t-vcloud-payment .table .hight {
+    background-color: #13599F;
+    color: #fff; }
+    .t-vcloud-payment .table .hight td {
+      color: #fff;
+      vertical-align: middle !important;
+      font-weight: 700; }
+    .t-vcloud-payment .table .hight span {
+      display: block; }
+  .t-vcloud-payment .table td, .t-vcloud-payment .table th {
+    vertical-align: middle; }
+  .t-vcloud-payment .table-responsive {
+    display: inline-table; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .table-responsive thead, .t-vcloud-payment .table-responsive tbody, .t-vcloud-payment .table-responsive tfoot, .t-vcloud-payment .table-responsive tr, .t-vcloud-payment .table-responsive th, .t-vcloud-payment .table-responsive td {
+        display: block; }
+      .t-vcloud-payment .table-responsive thead {
+        display: none; }
+      .t-vcloud-payment .table-responsive .align-center, .t-vcloud-payment .table-responsive .align-right {
+        text-align: inherit; }
+      .t-vcloud-payment .table-responsive tr:first-child {
+        border: 0; }
+      .t-vcloud-payment .table-responsive > tbody > tr > td {
+        padding-left: 50%; }
+        .t-vcloud-payment .table-responsive > tbody > tr > td:first-child {
+          border: 0; }
+      .t-vcloud-payment .table-responsive [data-label] {
+        position: relative; }
+        .t-vcloud-payment .table-responsive [data-label]:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 20px 8px 20px 15px;
+          content: attr(data-label);
+          font-weight: bold; } }
+  .t-vcloud-payment .table-admin {
+    border-collapse: separate;
+    border-spacing: 0 1em; }
+    .t-vcloud-payment .table-admin thead th, .t-vcloud-payment .table-admin td, .t-vcloud-payment .table-admin th {
+      border: 0;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      color: #13599F; }
+    .t-vcloud-payment .table-admin thead th, .t-vcloud-payment .table-admin th {
+      padding-bottom: 5px;
+      padding-top: 10px; }
+    .t-vcloud-payment .table-admin tbody tr {
+      background-color: #E7F5FF;
+      border-radius: 0px;
+      -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0); }
+      .t-vcloud-payment .table-admin tbody tr:hover {
+        background-color: #bae2ff; }
+    .t-vcloud-payment .table-admin td:last-child, .t-vcloud-payment .table-admin th:last-child {
+      text-align: right;
+      padding-right: 40px; }
+    .t-vcloud-payment .table-admin td:first-child, .t-vcloud-payment .table-admin th:first-child {
+      text-align: left;
+      padding-left: 40px; }
+    .t-vcloud-payment .table-admin td, .t-vcloud-payment .table-admin th {
+      font-size: 15px; }
+    .t-vcloud-payment .table-admin .btn-sm {
+      height: 30px;
+      line-height: 28px;
+      padding-left: 10px;
+      padding-right: 10px;
+      border-radius: 3px;
+      font-weight: normal;
+      font-size: 12px; }
+      .t-vcloud-payment .table-admin .btn-sm .icon {
+        width: 10px;
+        height: 10px;
+        margin-right: 5px; }
+    @media only screen and (max-width: 1420px) {
+      .t-vcloud-payment .table-admin td, .t-vcloud-payment .table-admin th {
+        padding: 10px 5px;
+        font-size: 13px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .table-admin > tbody > tr > td {
+        padding-left: 30%;
+        word-wrap: break-word; }
+        .t-vcloud-payment .table-admin > tbody > tr > td:first-child {
+          border: 0; }
+      .t-vcloud-payment .table-admin [data-label] {
+        position: relative; }
+        .t-vcloud-payment .table-admin [data-label]:before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          padding: 15px 8px 15px 15px;
+          content: attr(data-label);
+          font-weight: bold; }
+      .t-vcloud-payment .table-admin .btn-sm {
+        margin-right: 10px;
+        margin-left: 0; }
+      .t-vcloud-payment .table-admin tr {
+        border-bottom: 1px solid #ccc !important;
+        padding-bottom: 15px; }
+      .t-vcloud-payment .table-admin thead th, .t-vcloud-payment .table-admin td, .t-vcloud-payment .table-admin th {
+        padding-top: 15px;
+        padding-bottom: 5px; }
+      .t-vcloud-payment .table-admin td:last-child {
+        text-align: left; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .table-admin .btn-sm {
+        margin-right: 10px;
+        margin-left: 0;
+        font-size: 12px;
+        height: 26px;
+        line-height: 23px; } }
+    .t-vcloud-payment .table-admin .txt-date {
+      color: #252A3E; }
+  .t-vcloud-payment .table-txt-black thead th, .t-vcloud-payment .table-txt-black th {
+    color: #000; }
+  .t-vcloud-payment .table-txt-black td {
+    color: #4D4D53; }
+  .t-vcloud-payment .table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: #E7F5FF; }
+  .t-vcloud-payment .table-striped td {
+    border: 0;
+    color: #13599F; }
+  .t-vcloud-payment .table-config {
+    font-size: 15px;
+    font-weight: normal;
+    max-width: inherit;
+    width: auto;
+    min-width: 100%; }
+    .t-vcloud-payment .table-config tr {
+      width: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+    .t-vcloud-payment .table-config td, .t-vcloud-payment .table-config th {
+      text-align: left;
+      vertical-align: top;
+      display: block;
+      width: 200px; }
+    .t-vcloud-payment .table-config td {
+      min-height: 90px; }
+    .t-vcloud-payment .table-config .first {
+      vertical-align: top;
+      width: 200px; }
+    .t-vcloud-payment .table-config .first-1 {
+      vertical-align: top;
+      width: 100px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .table-config {
+        font-size: 12px; }
+        .t-vcloud-payment .table-config .first {
+          width: 200px; }
+        .t-vcloud-payment .table-config td, .t-vcloud-payment .table-config th {
+          width: 200px; } }
+  .t-vcloud-payment .table-modal {
+    width: 100%; }
+    .t-vcloud-payment .table-modal tr:hover {
+      background-color: #AECBE2; }
+    .t-vcloud-payment .table-modal td {
+      font-size: 13px;
+      padding: 10px;
+      border-right: 2px solid #AECBE2;
+      color: #13599F; }
+      .t-vcloud-payment .table-modal td:last-child {
+        border-width: 0; }
+    .t-vcloud-payment .table-modal .lst1 {
+      text-align: center;
+      width: 20%; }
+    .t-vcloud-payment .table-modal .lst2 {
+      text-align: center;
+      width: 30%; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .table-modal .lst2 {
+        text-align: center;
+        width: 40%; } }
+  @media only screen and (max-width: 1420px) {
+    .t-vcloud-payment .table-vbox {
+      font-size: 14px; }
+      .t-vcloud-payment .table-vbox .break-word {
+        width: 250px; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .table-vbox .break-word {
+      width: 90%; } }
+  .t-vcloud-payment .table-history {
+    border-spacing: 0 0.5em; }
+  .t-vcloud-payment .break-word {
+    word-wrap: break-word; }
+  .t-vcloud-payment .bl-table-add-camera {
+    font-size: 15px;
+    font-weight: normal;
+    color: #13599F; }
+    .t-vcloud-payment .bl-table-add-camera .table-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      padding-left: 80px;
+      padding-right: 30px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+      .t-vcloud-payment .bl-table-add-camera .table-row:nth-of-type(2n) {
+        background-color: #E7F5FF; }
+      .t-vcloud-payment .bl-table-add-camera .table-row.row-head {
+        background-color: #13599F;
+        color: #fff; }
+    .t-vcloud-payment .bl-table-add-camera .table-col {
+      position: relative;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      text-align: center;
+      width: 20%; }
+      .t-vcloud-payment .bl-table-add-camera .table-col.name {
+        width: 40%;
+        text-align: left; }
+    .t-vcloud-payment .bl-table-add-camera .table-row-in {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+    .t-vcloud-payment .bl-table-add-camera .bl-collapse {
+      width: 100%;
+      margin-bottom: 0; }
+      .t-vcloud-payment .bl-table-add-camera .bl-collapse .collapse-row {
+        position: absolute;
+        top: 16px;
+        left: -30px;
+        font-size: 15px;
+        font-weight: normal;
+        color: #13599F;
+        padding-left: 30px; }
+    .t-vcloud-payment .bl-table-add-camera .collapse {
+      width: 100%; }
+    .t-vcloud-payment .bl-table-add-camera .custom-checkbox {
+      margin-top: 0; }
+    .t-vcloud-payment .bl-table-add-camera .custom-control {
+      display: inline-block; }
+    .t-vcloud-payment .bl-table-add-camera .custom-control-label {
+      padding-left: 0; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-table-add-camera {
+        font-size: 12px; }
+        .t-vcloud-payment .bl-table-add-camera .table-row {
+          padding-left: 10px;
+          padding-right: 10px; }
+        .t-vcloud-payment .bl-table-add-camera .bl-collapse .collapse-row {
+          left: 0;
+          font-size: 12px; } }
+  .t-vcloud-payment .s-add-user {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto; }
+  .t-vcloud-payment .bl-add-user {
+    padding: 40px;
+    border: 2px solid #13599F;
+    max-width: 920px;
+    margin-left: auto;
+    margin-right: auto; }
+    .t-vcloud-payment .bl-add-user .label {
+      font-size: 1rem;
+      padding-bottom: 10px;
+      color: #13599F; }
+    .t-vcloud-payment .bl-add-user .col-2.text-right {
+      padding-top: 5px; }
+    @media only screen and (min-width: 1380px) {
+      .t-vcloud-payment .bl-add-user .label {
+        font-size: 1.125rem; }
+      .t-vcloud-payment .bl-add-user .form-control {
+        height: 50px;
+        font-size: 18px; } }
+    .t-vcloud-payment .bl-add-user .g-button {
+      margin-top: 30px; }
+      .t-vcloud-payment .bl-add-user .g-button .btn {
+        min-width: 140px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-add-user {
+        padding: 15px; } }
+  .t-vcloud-payment .no-border {
+    border: 0 !important; }
+  .t-vcloud-payment .text-table {
+    color: #FFCA05; }
+  .t-vcloud-payment .text-s {
+    font-size: 1.5rem; }
+  .t-vcloud-payment .text-primary {
+    color: #f84c41 !important; }
+  .t-vcloud-payment .text-secondary {
+    color: #13599F !important; }
+  .t-vcloud-payment .icon {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+    background-size: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 10px; }
+  .t-vcloud-payment .icon-setting {
+    background-image: url(../images/icon_setting_white.png);
+    margin-left: 5px;
+    margin-top: -2px;
+    margin-right: 0; }
+  .t-vcloud-payment .icon-edit {
+    background-image: url(../images/icon_edit.png);
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-top: -2px;
+    width: 8px;
+    height: 8px; }
+  .t-vcloud-payment .icon-edit-white {
+    background-image: url(../images/icon_edit_white.png);
+    margin-left: 2px;
+    margin-right: 5px;
+    margin-top: -2px;
+    width: 8px;
+    height: 8px; }
+  .t-vcloud-payment .icon-view1 {
+    background-image: url(../images/view1.png); }
+  .t-vcloud-payment .icon-view2 {
+    background-image: url(../images/view2.png); }
+  .t-vcloud-payment .icon-view3 {
+    background-image: url(../images/view3.png); }
+  .t-vcloud-payment .icon-view4 {
+    background-image: url(../images/view4.png); }
+  .t-vcloud-payment .icon-replay {
+    background-image: url(../images/icon_replay.png); }
+  .t-vcloud-payment .icon-edit-revert {
+    background-image: url(../images/icon_edit_invert.png); }
+  .t-vcloud-payment .icon-location {
+    background-image: url(../images/icon_location.png); }
+  .t-vcloud-payment .page-item .icon-pre {
+    background-image: url(../images/icon_pre.png); }
+  .t-vcloud-payment .icon-pre-all {
+    background-image: url(../images/icon_pre_all.png); }
+  .t-vcloud-payment .page-item .icon-next {
+    background-image: url(../images/icon_next.png); }
+  .t-vcloud-payment .icon-next-all {
+    background-image: url(../images/icon_next_all.png); }
+  .t-vcloud-payment .icon-edit-s {
+    background-image: url(../images/icon_edit_s.png); }
+  .t-vcloud-payment .icon-delete-s {
+    background-image: url(../images/icon_delete_s.png); }
+  .t-vcloud-payment .icon-eye {
+    background-image: url(../images/icon_eye.png);
+    width: 17px;
+    height: 17px; }
+  .t-vcloud-payment .icon-pre {
+    background-image: url(../images/icon_caret_prev.png);
+    width: 12px;
+    height: 24px; }
+  .t-vcloud-payment .icon-next {
+    background-image: url(../images/icon_caret_next.png);
+    width: 12px;
+    height: 24px; }
+  .t-vcloud-payment .icon-calendar {
+    background-image: url(../images/icon_calendar.png); }
+  .t-vcloud-payment .icon-calendar2 {
+    background-image: url(../images/icon_calendar2.png); }
+  .t-vcloud-payment .icon-calendar3 {
+    background-image: url(../images/icon_calendar3.png); }
+  .t-vcloud-payment .icon-clock {
+    background-image: url(../images/icon_clock.png); }
+  .t-vcloud-payment .icon-user {
+    background-image: url(../images/icon_user.png); }
+  .t-vcloud-payment .icon-phone {
+    background-image: url(../images/icon_phone.png); }
+  .t-vcloud-payment .icon-mail {
+    background-image: url(../images/icon_mail.png); }
+  .t-vcloud-payment .icon-store {
+    background-image: url(../images/icon_store.png); }
+  .t-vcloud-payment .icon-info-p {
+    background-image: url(../images/icon_info.png);
+    width: 25px;
+    height: 25px; }
+  .t-vcloud-payment .icon-view-map {
+    background-image: url(../images/icon_viewmap.png);
+    width: 25px;
+    height: 25px; }
+  .t-vcloud-payment .icon-slide-toggle {
+    background-image: url(../images/icon_arrow.png);
+    width: 25px;
+    height: 18px; }
+  .t-vcloud-payment .icon-wallet {
+    background-image: url(../images/icon_wallet.png);
+    width: 14px;
+    height: 14px; }
+  .t-vcloud-payment .icon-delete-r {
+    background-image: url(../images/icon_close.png);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #13599F;
+    background-position: center center;
+    margin-right: 0; }
+    .t-vcloud-payment .icon-delete-r:hover {
+      background-color: #000; }
+  .t-vcloud-payment .icon-box {
+    background-image: url(../images/icon_box.png);
+    width: 69px;
+    height: 69px; }
+  .t-vcloud-payment .icon-cam-err {
+    background-image: url(../images/icon_cam_err.png);
+    width: 69px;
+    height: 69px; }
+  .t-vcloud-payment .icon-box-not {
+    background-image: url(../images/icon_box_2.png);
+    width: 69px;
+    height: 69px; }
+  .t-vcloud-payment .icon-add {
+    background-image: url(../images/icon_add.png);
+    width: 120px;
+    height: 126px; }
+  .t-vcloud-payment .icon-add-p {
+    background-image: url(../images/icon_add_big.png);
+    width: 42px;
+    height: 42px;
+    margin: 0 auto; }
+  .t-vcloud-payment .icon-user-p {
+    background-image: url(../images/icon_user_login.png);
+    width: 11px;
+    height: 15px; }
+  .t-vcloud-payment .icon-user2-p {
+    background-image: url(../images/icon_user2_login.png);
+    width: 18px;
+    height: 15px; }
+  .t-vcloud-payment .icon-pass-p {
+    background-image: url(../images/icon_pass.png);
+    width: 15px;
+    height: 15px; }
+  .t-vcloud-payment .icon-see-p {
+    background-image: url(../images/icon_eye.png);
+    width: 15px;
+    height: 15px;
+    left: auto !important;
+    right: 5px;
+    cursor: pointer; }
+  .t-vcloud-payment .icon-email-p {
+    background-image: url(../images/icon_envelope_p.png);
+    width: 15px;
+    height: 15px; }
+  .t-vcloud-payment .icon-code-p {
+    background-image: url(../images/icon_code.png);
+    width: 18px;
+    height: 15px; }
+  .t-vcloud-payment .icon-phone-p {
+    background-image: url(../images/icon_phone_p.png);
+    width: 9px;
+    height: 15px; }
+  .t-vcloud-payment .icon-search-f {
+    background-image: url(../images/icon_search_bar.png);
+    width: 16px;
+    height: 16px; }
+  .t-vcloud-payment .icon-checked {
+    background-image: url(../images/icon_checked.png);
+    width: 13px;
+    height: 9px; }
+  .t-vcloud-payment .icon-check-sm {
+    background-image: url(../images/icon_check3.png);
+    width: 10px;
+    height: 9px;
+    margin-right: 5px; }
+  .t-vcloud-payment .icon-favorite {
+    background-image: url(../images/icon_star.png);
+    width: 28px;
+    height: 28px; }
+    .t-vcloud-payment .icon-favorite:hover, .t-vcloud-payment .icon-favorite.active {
+      background-image: url(../images/icon_star_active.png); }
+  .t-vcloud-payment .icon-changepass {
+    background-image: url(../images/icon_changePass.png);
+    width: 64px;
+    height: 64px; }
+  .t-vcloud-payment .icon-closes {
+    background-image: url(../images/icon_closes.png);
+    width: 43px;
+    height: 43px; }
+  .t-vcloud-payment .icon-notice {
+    background-image: url(../images/icon_notice.png);
+    width: 68px !important;
+    height: 68px !important; }
+  .t-vcloud-payment .icon-notice-blue {
+    background-image: url(../images/icon_notice_blue.png);
+    width: 56px;
+    height: 56px; }
+  .t-vcloud-payment .icon-ctrl {
+    background-image: url(../images/icon_control.png);
+    width: 23px;
+    height: 30px;
+    background-size: auto 100%;
+    background-position: center center; }
+  .t-vcloud-payment .icon-close-sm {
+    background-image: url(../images/icon_close_sm.png);
+    width: 8px;
+    height: 8px; }
+  .t-vcloud-payment .icon-tl {
+    background-image: url(../images/icon_tl.png); }
+  .t-vcloud-payment .icon-tr {
+    background-image: url(../images/icon_tr.png); }
+  .t-vcloud-payment .icon-t {
+    background-image: url(../images/icon_t.png); }
+  .t-vcloud-payment .icon-l {
+    background-image: url(../images/icon_l.png); }
+  .t-vcloud-payment .icon-m {
+    background-image: url(../images/icon_m.png); }
+  .t-vcloud-payment .icon-r {
+    background-image: url(../images/icon_r.png); }
+  .t-vcloud-payment .icon-bl {
+    background-image: url(../images/icon_bl.png); }
+  .t-vcloud-payment .icon-b {
+    background-image: url(../images/icon_b.png); }
+  .t-vcloud-payment .icon-br {
+    background-image: url(../images/icon_br.png); }
+  .t-vcloud-payment .icon-zoomIn {
+    background-image: url(../images/icon_zoominP.png); }
+  .t-vcloud-payment .icon-zoomOut {
+    background-image: url(../images/icon_zoomOutP.png); }
+  .t-vcloud-payment .icon-refresh {
+    background-image: url(../images/icon_refresh.png);
+    margin-right: 0;
+    width: 25px;
+    height: 25px; }
+  .t-vcloud-payment .icon-download-cloud {
+    background-image: url(../images/icon_cloud.png);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-size: 50%;
+    border-radius: 50%;
+    background-position: center center; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .icon-download-cloud {
+        margin-right: 0; } }
+  .t-vcloud-payment .icon-download-cloud2 {
+    background-image: url(../images/icon_cloud.png);
+    width: 35px;
+    height: 35px;
+    background-size: 50%;
+    border-radius: 50%;
+    background-position: center center;
+    margin-right: 0;
+    margin-top: -2px; }
+  .t-vcloud-payment .icon-speed {
+    background-image: url(../images/icon_setting_video.png); }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .icon-speed {
+        margin-right: 0; } }
+  .t-vcloud-payment .icon-ss {
+    background-image: url(../images/icon_ss.png);
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .icon-ss {
+        width: 55px;
+        height: 55px; } }
+  .t-vcloud-payment .icon-st {
+    background-image: url(../images/icon_st.png);
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .icon-st {
+        width: 75px;
+        height: 75px; } }
+  .t-vcloud-payment .icon-box-st {
+    background-image: url(../images/icon_box_st.png);
+    width: 120px;
+    height: 120px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .icon-box-st {
+        width: 75px;
+        height: 75px; } }
+  .t-vcloud-payment .icon-close-w {
+    background: url(../images/icon_close_sm_white.png) center center no-repeat;
+    width: 26px;
+    height: 26px;
+    background-color: #598abc;
+    border-radius: 50%;
+    background-size: 10px;
+    cursor: pointer;
+    margin-left: 5px; }
+  .t-vcloud-payment .icon-save-w {
+    background-image: url(../images/icon_save_white.png); }
+  .t-vcloud-payment .icon-x-b {
+    background-image: url(../images/icon_x_b.png);
+    width: 8px;
+    height: 8px; }
+  .t-vcloud-payment .navbar {
+    padding: 5px 0; }
+    .t-vcloud-payment .navbar .navbar-nav .nav-link {
+      font-size: 13px;
+      color: #fff;
+      padding: 5px 0px; }
+      .t-vcloud-payment .navbar .navbar-nav .nav-link:hover {
+        color: #fff; }
+      @media (max-width: 1380px) {
+        .t-vcloud-payment .navbar .navbar-nav .nav-link {
+          font-size: 12px; } }
+      @media (max-width: 1200px) {
+        .t-vcloud-payment .navbar .navbar-nav .nav-link {
+          font-size: 11px; } }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment .navbar .navbar-nav .nav-link {
+          color: #fff !important;
+          border-color: #3575ca !important; } }
+    .t-vcloud-payment .navbar .navbar-toggler .navbar-toggler-icon {
+      height: 32px;
+      width: 32px;
+      background: url(../images/closeBar.png) no-repeat center center;
+      background-size: 100%; }
+    .t-vcloud-payment .navbar .navbar-toggler.collapsed .navbar-toggler-icon {
+      background-image: url(../images/toggleBar.png); }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .navbar .navbar-collapse {
+        padding-bottom: 20px; }
+        .t-vcloud-payment .navbar .navbar-collapse .navbar-nav .nav-item {
+          text-align: center;
+          width: 100%; }
+        .t-vcloud-payment .navbar .navbar-collapse .navbar-nav .nav-link {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          border-top: 1px solid #3575ca; }
+        .t-vcloud-payment .navbar .navbar-collapse .form-inline .btn {
+          margin-left: 0;
+          width: 100%;
+          margin-top: 10px; } }
+    @media (max-width: 1260px) {
+      .t-vcloud-payment .navbar {
+        padding-top: 7px;
+        padding-bottom: 7px; } }
+    .t-vcloud-payment .navbar .mf {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .navbar .navbar-nav .dropdown-wallet .nav-link {
+        color: #FFD008 !important; } }
+  .t-vcloud-payment .not-carret .dropdown-toggle:after {
+    display: none; }
+  .t-vcloud-payment .navbar-brand {
+    text-indent: -9999px;
+    width: 180px;
+    height: 63px;
+    background: url(../images/logo_agency_white.png) no-repeat center center;
+    background-size: 100%; }
+  .t-vcloud-payment .navbar-nav .nav-link {
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent; }
+    .t-vcloud-payment .navbar-nav .nav-link:hover, .t-vcloud-payment .navbar-nav .nav-link.active {
+      border-color: #13599F; }
+  .t-vcloud-payment .navbar-nav .nav-item {
+    padding-left: 15px;
+    padding-right: 15px; }
+    @media (max-width: 1080px) {
+      .t-vcloud-payment .navbar-nav .nav-item {
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .t-vcloud-payment .form-inline .btn {
+    margin-left: 20px; }
+  .t-vcloud-payment .nav-avatar {
+    list-style: none;
+    padding: 0;
+    position: relative; }
+    .t-vcloud-payment .nav-avatar .avatar {
+      width: 40px;
+      height: 40px;
+      background-size: 100% !important;
+      border-radius: 50%; }
+    .t-vcloud-payment .nav-avatar .dropdown-toggle:after {
+      display: none; }
+    .t-vcloud-payment .nav-avatar .icon-setting {
+      position: absolute;
+      top: 30px;
+      right: 10px;
+      width: 8px;
+      background-color: #fff;
+      padding: 3px;
+      border-radius: 50%; }
+    .t-vcloud-payment .nav-avatar a:hover, .t-vcloud-payment .nav-avatar:hover {
+      border-color: transparent !important; }
+    .t-vcloud-payment .nav-avatar .dropdown-menu-right {
+      top: 90% !important; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .nav-avatar .dropdown-toggle {
+        width: 70px;
+        margin: 0 auto;
+        position: relative; }
+      .t-vcloud-payment .nav-avatar .icon-setting {
+        top: 37px;
+        right: 15px; }
+      .t-vcloud-payment .nav-avatar .avatar {
+        margin-left: 10px; } }
+  .t-vcloud-payment .navbar-nav .dropdown-menu-right {
+    right: 10px;
+    left: auto;
+    margin-top: 10px; }
+  .t-vcloud-payment .s-navbar {
+    background-color: #13599F;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-weight: 700; }
+    .t-vcloud-payment .s-navbar .navbar .navbar-nav .nav-link {
+      border-bottom: 1px solid transparent; }
+      .t-vcloud-payment .s-navbar .navbar .navbar-nav .nav-link.active, .t-vcloud-payment .s-navbar .navbar .navbar-nav .nav-link:hover {
+        border-color: #fff; }
+    .t-vcloud-payment .s-navbar .btn-primary {
+      padding-left: 15px;
+      padding-right: 15px; }
+    @media (max-width: 1500px) {
+      .t-vcloud-payment .s-navbar .navbar-brand {
+        background-image: url(../images/logo_agency_white.png);
+        width: 150px; }
+      .t-vcloud-payment .s-navbar .btn-primary {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px; }
+      .t-vcloud-payment .s-navbar .nav-item {
+        padding-left: 10px;
+        padding-right: 10px; } }
+    @media (max-width: 1260px) {
+      .t-vcloud-payment .s-navbar .navbar-brand {
+        width: 150px; }
+      .t-vcloud-payment .s-navbar .navbar .navbar-nav .nav-link {
+        font-size: 10px; }
+      .t-vcloud-payment .s-navbar .nav-item {
+        padding-left: 10px;
+        padding-right: 10px; }
+      .t-vcloud-payment .s-navbar .btn-primary {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 10px; } }
+    @media (max-width: 1120px) {
+      .t-vcloud-payment .s-navbar .nav-item {
+        padding-left: 5px;
+        padding-right: 5px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-navbar {
+        -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); }
+        .t-vcloud-payment .s-navbar .navbar {
+          padding: 0; }
+        .t-vcloud-payment .s-navbar .navbar .navbar-nav .nav-link {
+          color: #13599F;
+          font-size: 12px; }
+        .t-vcloud-payment .s-navbar .navbar-toggler {
+          background-color: #f84c41;
+          padding: 5px; }
+        .t-vcloud-payment .s-navbar .btn-primary {
+          display: block;
+          width: 100%;
+          font-size: 12px; } }
+  .t-vcloud-payment .navbar-right {
+    padding-top: 30px;
+    position: relative; }
+    .t-vcloud-payment .navbar-right .menu-trigger {
+      position: absolute;
+      right: -60px;
+      top: 20px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .navbar-right .menu-trigger {
+        top: 75px; } }
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (device-aspect-ratio: 40 / 71) and (-webkit-device-pixel-ratio: 2) {
+      .t-vcloud-payment .navbar-right .menu-trigger {
+        right: -45px; } }
+  .t-vcloud-payment .nav-title {
+    font-size: 20px;
+    color: #13599F;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 900; }
+  .t-vcloud-payment .g-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .t-vcloud-payment .g-title .btn-small {
+      font-size: 10px;
+      height: 25px;
+      line-height: 20px;
+      padding-left: 5px;
+      padding-right: 5px;
+      border-width: 1px;
+      font-weight: bold; }
+  .t-vcloud-payment .card {
+    padding: 40px 5px;
+    text-align: center;
+    border: 0;
+    border-radius: 40px;
+    margin-bottom: 30px; }
+    .t-vcloud-payment .card .card-body, .t-vcloud-payment .card .card-image {
+      position: relative;
+      z-index: 5; }
+  .t-vcloud-payment .card-header {
+    font-size: 25px;
+    font-weight: 700; }
+  .t-vcloud-payment .card-caption {
+    font-size: 20px; }
+  .t-vcloud-payment .card-secondary {
+    border: 1px solid #13599F;
+    padding: 0 0 20px;
+    border-radius: 10px;
+    text-align: left; }
+    .t-vcloud-payment .card-secondary .card-header {
+      background-color: #13599F;
+      color: #fff;
+      font-size: 16px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px; }
+    .t-vcloud-payment .card-secondary .col-5, .t-vcloud-payment .card-secondary .col-7 {
+      margin-bottom: 10px; }
+    .t-vcloud-payment .card-secondary .btn-form {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 40px;
+      line-height: 40px;
+      margin-left: 0;
+      margin-top: 5px; }
+  .t-vcloud-payment .bl-collapse {
+    position: relative;
+    margin-bottom: 20px; }
+    .t-vcloud-payment .bl-collapse .collapse-row {
+      font-size: 13px;
+      color: #353535;
+      font-weight: 700;
+      padding-left: 22px;
+      position: relative;
+      cursor: pointer; }
+      .t-vcloud-payment .bl-collapse .collapse-row:before {
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 14px;
+        height: 14px;
+        background: url(../images/icon_zoomout.png) no-repeat;
+        background-size: 100%; }
+    .t-vcloud-payment .bl-collapse .collapsed:before {
+      background-image: url(../images/icon_zoomin.png); }
+    .t-vcloud-payment .bl-collapse .list-group {
+      font-size: 0.8125rem; }
+    .t-vcloud-payment .bl-collapse .list-group-item {
+      border: 0;
+      color: #BEBEBE;
+      padding-bottom: 0px;
+      padding-left: 22px;
+      position: relative;
+      background-color: transparent; }
+      .t-vcloud-payment .bl-collapse .list-group-item:hover {
+        color: #13599F; }
+      .t-vcloud-payment .bl-collapse .list-group-item.active {
+        color: #09B864; }
+    .t-vcloud-payment .bl-collapse .dropdown-edit {
+      position: absolute;
+      right: 15px;
+      top: -3px;
+      z-index: 10; }
+      .t-vcloud-payment .bl-collapse .dropdown-edit .dropdown-menu {
+        min-width: 8rem; }
+  .t-vcloud-payment .bl-collapse-panel {
+    border: 1px solid #13599F; }
+    .t-vcloud-payment .bl-collapse-panel .collapse-panel-head {
+      background-color: #13599F;
+      color: #fff;
+      padding: 15px 60px 15px 40px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head h4 {
+        font-size: 18px; }
+        .t-vcloud-payment .bl-collapse-panel .collapse-panel-head h4 small {
+          font-size: 13px;
+          display: block;
+          padding-top: 5px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head:before {
+        width: 24px;
+        height: 24px;
+        background-image: url(../images/col_up.png);
+        left: auto;
+        right: 20px;
+        top: 50%;
+        margin-top: -12px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head.collapsed:before {
+        background-image: url(../images/col_down.png); }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head .btn-toggle {
+        position: absolute;
+        top: 50%;
+        bottom: auto;
+        z-index: 100;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: -100px;
+        z-index: 500; }
+        .t-vcloud-payment .bl-collapse-panel .collapse-panel-head .btn-toggle.active {
+          background-color: #fff; }
+          .t-vcloud-payment .bl-collapse-panel .collapse-panel-head .btn-toggle.active > .handle {
+            background-color: #13599F; }
+        .t-vcloud-payment .bl-collapse-panel .collapse-panel-head .btn-toggle:after {
+          display: none; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head .btn-white {
+        position: absolute;
+        top: 50%;
+        bottom: auto;
+        z-index: 100;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 70px;
+        z-index: 500;
+        border-radius: 4px;
+        color: #13599F;
+        height: 40px;
+        line-height: 40px;
+        min-width: 80px;
+        padding-left: 15px;
+        padding-right: 15px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-head.hide-collapsed:before {
+        display: none; }
+      @media (max-width: 767.98px) {
+        .t-vcloud-payment .bl-collapse-panel .collapse-panel-head {
+          padding-left: 20px; } }
+    .t-vcloud-payment .bl-collapse-panel .collapse-panel-body {
+      padding: 25px 40px;
+      border-top: 1px solid #13599F;
+      position: relative; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-body .btn {
+        border-radius: 3px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-body .g-button {
+        padding-bottom: 0; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-body .form-control {
+        border-width: 1px;
+        border-radius: 4px; }
+      .t-vcloud-payment .bl-collapse-panel .collapse-panel-body .pos-r {
+        position: absolute;
+        top: 20px;
+        right: -155px;
+        border-radius: 25px; }
+        .t-vcloud-payment .bl-collapse-panel .collapse-panel-body .pos-r:after {
+          display: none; }
+  .t-vcloud-payment .row-se {
+    margin-bottom: 30px; }
+    .t-vcloud-payment .row-se h4 {
+      font-size: 1.125rem;
+      color: #13599F; }
+  .t-vcloud-payment .list-se {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 100px;
+    padding-right: 30px; }
+    .t-vcloud-payment .list-se li {
+      width: 25%;
+      padding: 5px 0; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .list-se {
+        padding-left: 40px;
+        padding-right: 10px; }
+        .t-vcloud-payment .list-se li {
+          width: 50%; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .list-se {
+        padding-left: 10px;
+        padding-right: 10px; }
+        .t-vcloud-payment .list-se li {
+          width: 100%; } }
+    .t-vcloud-payment .list-se.list-se-in {
+      padding-left: 30px; }
+  .t-vcloud-payment .card-collapse {
+    padding: 0;
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; }
+    .t-vcloud-payment .card-collapse .card-header {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      background-color: #13599F;
+      color: #fff; }
+      .t-vcloud-payment .card-collapse .card-header .btn {
+        width: 100%;
+        padding-left: 20px;
+        text-align: left;
+        position: relative; }
+        .t-vcloud-payment .card-collapse .card-header .btn:after {
+          display: block;
+          content: "";
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          right: 0px;
+          top: 10px;
+          background: url("../images/icon_collapse_up.png") no-repeat;
+          background-size: 100%; }
+        .t-vcloud-payment .card-collapse .card-header .btn.collapsed:after {
+          background-image: url("../images/icon_collapse_down.png"); }
+  .t-vcloud-payment .dropdown-menu {
+    border: 1px solid transparent;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); }
+    .t-vcloud-payment .dropdown-menu .dropdown-item {
+      font-size: 14px;
+      color: #1894D6;
+      padding: 6px 15px; }
+    .t-vcloud-payment .dropdown-menu .custom-control {
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: -3px; }
+  .t-vcloud-payment .dropdown-edit .dropdown-toggle {
+    font-size: 9px;
+    padding: 2px 7px 2px 5px;
+    border: 1px solid #13599F;
+    border-radius: 15px;
+    height: 20px;
+    line-height: 14px; }
+    .t-vcloud-payment .dropdown-edit .dropdown-toggle:after {
+      display: none; }
+  .t-vcloud-payment .dropdown-menu {
+    padding-top: 5px;
+    padding-bottom: 5px; }
+  .t-vcloud-payment .dropdown-divider {
+    margin-top: 5px;
+    margin-bottom: 5px; }
+  .t-vcloud-payment .dropdown.has-shadow .dropdown-toggle {
+    -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+    height: 50px;
+    padding-left: 10px; }
+  .t-vcloud-payment .dropdown .dropdown-item {
+    color: #13599F;
+    font-size: 0.8125rem;
+    cursor: pointer;
+    border-bottom: 1px solid #D2E2F3; }
+    .t-vcloud-payment .dropdown .dropdown-item:last-child {
+      border: 0; }
+    .t-vcloud-payment .dropdown .dropdown-item.active {
+      background-color: #EFEFEF; }
+      .t-vcloud-payment .dropdown .dropdown-item.active:before {
+        display: inline-block;
+        content: "";
+        width: 12px;
+        height: 10px;
+        background: url(../images/icon_check.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 10px;
+        top: 16px; }
+  .t-vcloud-payment .dropdown .dropdown-toggle:after {
+    background-image: url(../images/carret_down_white.png);
+    width: 9px;
+    height: 5px;
+    border: 0;
+    margin-left: 5px;
+    background-size: 100%; }
+  .t-vcloud-payment .dropdown-wallet {
+    padding-right: 5px !important; }
+    .t-vcloud-payment .dropdown-wallet .dropdown-toggle:after {
+      background-image: url(../images/carret_down.png);
+      width: 9px;
+      height: 5px;
+      border: 0;
+      margin-left: 5px;
+      background-size: 100%; }
+    .t-vcloud-payment .dropdown-wallet .dropdown-menu-right {
+      right: 0 !important; }
+    .t-vcloud-payment .dropdown-wallet .icon {
+      margin-right: 2px; }
+    .t-vcloud-payment .dropdown-wallet .nav-link {
+      color: #FFD008 !important; }
+  .t-vcloud-payment .modal .modal-content {
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0px;
+    background-color: #fff;
+    border: 1px solid #AECBE2; }
+  .t-vcloud-payment .modal .modal-header {
+    border: 0;
+    padding-bottom: 0;
+    padding: 0;
+    border-radius: 0px;
+    background-color: #13599F;
+    position: relative; }
+  .t-vcloud-payment .modal .modal-title {
+    font-size: 1.125rem;
+    color: #fff;
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    font-weight: 900; }
+  .t-vcloud-payment .modal .modal-body {
+    background-color: #F0FCFF; }
+    .t-vcloud-payment .modal .modal-body .g-button {
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  .t-vcloud-payment .modal .modal-footer {
+    text-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 0;
+    padding-top: 30px;
+    padding-bottom: 10px; }
+    .t-vcloud-payment .modal .modal-footer .btn {
+      height: 50px;
+      line-height: 48px;
+      min-width: 150px; }
+  .t-vcloud-payment .modal .close {
+    margin: 0;
+    padding: 8px 15px;
+    color: #fff;
+    text-shadow: 0 0 0 transparent;
+    right: 10px; }
+  .t-vcloud-payment .modal .col-haft .col-md-4 {
+    padding-right: 5px; }
+  .t-vcloud-payment .modal .col-haft .btn {
+    margin-left: 0; }
+  .t-vcloud-payment .modal-form .label {
+    font-size: 0.875rem;
+    padding-bottom: 10px;
+    color: #13599F; }
+  .t-vcloud-payment .modal-form .modal-body {
+    padding: 30px 60px; }
+  .t-vcloud-payment .modal-form .form-group {
+    margin-bottom: 15px; }
+  .t-vcloud-payment .modal-form .collapse-row {
+    font-size: 0.875rem;
+    color: #13599F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    font-weight: 700;
+    cursor: pointer; }
+    .t-vcloud-payment .modal-form .collapse-row:after {
+      display: inline-block;
+      content: "";
+      width: 20px;
+      height: 6px;
+      background: url(../images/caret_top_blue.png) no-repeat 0 0;
+      background-size: auto 100%;
+      vertical-align: middle;
+      margin-left: 5px; }
+    .t-vcloud-payment .modal-form .collapse-row.collapsed:after {
+      background-image: url(../images/caret_bottom_blue.png); }
+  .t-vcloud-payment .modal-form .btn {
+    height: 40px;
+    line-height: 38px; }
+  .t-vcloud-payment .modal-form .bl-map-modal {
+    margin-left: -60px;
+    margin-right: -60px;
+    margin-top: 20px; }
+  @media (max-width: 767.98px) {
+    .t-vcloud-payment .modal-form .modal-body {
+      padding: 30px; }
+    .t-vcloud-payment .modal-form .btn {
+      margin-left: 0; }
+    .t-vcloud-payment .modal-form .bl-map-modal {
+      margin-left: -30px;
+      margin-right: -30px; } }
+  .t-vcloud-payment .modal-camera .label {
+    font-size: 1.125rem;
+    padding-bottom: 10px;
+    color: #13599F;
+    font-weight: 700; }
+  .t-vcloud-payment .modal-camera .modal-body {
+    padding: 30px 60px; }
+  .t-vcloud-payment .modal-add-user .modal-body {
+    padding: 0; }
+  .t-vcloud-payment .g-head {
+    max-width: 600px;
+    margin: 0px auto 10px; }
+    .t-vcloud-payment .g-head .has-shadow {
+      margin-left: -15px; }
+  .t-vcloud-payment .custom-c {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 20; }
+    .t-vcloud-payment .custom-c label {
+      text-indent: -9999px; }
+    .t-vcloud-payment .custom-c.top {
+      top: -2px; }
+  .t-vcloud-payment .row-collapse {
+    max-width: 700px;
+    margin: 50px auto 0; }
+    .t-vcloud-payment .row-collapse .title {
+      font-size: 18px;
+      color: #13599F;
+      margin-bottom: 10px;
+      margin-top: 20px; }
+  .t-vcloud-payment .row-collapse-none {
+    margin-bottom: -50px;
+    margin-top: 40px; }
+  .t-vcloud-payment .pagination .page-link {
+    border: 1px solid #13599F;
+    color: #13599F;
+    font-size: 14px;
+    background: transparent;
+    font-weight: 700; }
+    .t-vcloud-payment .pagination .page-link:hover {
+      background: #13599F;
+      color: #fff; }
+      .t-vcloud-payment .pagination .page-link:hover .icon-pre {
+        background-image: url(../images/icon_pre_active.png); }
+      .t-vcloud-payment .pagination .page-link:hover .icon-pre-all {
+        background-image: url(../images/icon_pre_all_active.png); }
+      .t-vcloud-payment .pagination .page-link:hover .icon-next {
+        background-image: url(../images/icon_next_active.png); }
+      .t-vcloud-payment .pagination .page-link:hover .icon-next-all {
+        background-image: url(../images/icon_next_all_active.png); }
+  .t-vcloud-payment .pagination .icon {
+    width: 12px;
+    height: 10px;
+    margin: 0; }
+  .t-vcloud-payment .pagination .icon-pre, .t-vcloud-payment .pagination .icon-next {
+    width: 7px; }
+  .t-vcloud-payment .pagination .page-item.active .page-link {
+    background: #13599F;
+    color: #fff; }
+  .t-vcloud-payment .pagination .page-item:last-child .page-link, .t-vcloud-payment .pagination .page-item:first-child .page-link {
+    border-radius: 0; }
+  .t-vcloud-payment .pagination.bg-w .page-link {
+    background-color: #fff; }
+  .t-vcloud-payment .bl-foot {
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 10px; }
+  .t-vcloud-payment .txt-pag {
+    color: #13599F;
+    padding: 10px;
+    font-size: 14px; }
+  .t-vcloud-payment .bl-video-js {
+    border-radius: 0px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0; }
+    .t-vcloud-payment .bl-video-js .video-js {
+      height: 100% !important;
+      width: 100% !important;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .t-vcloud-payment .bl-video-js .vjs-big-play-button {
+      background-color: transparent;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../images/big_play.png");
+      background-repeat: no-repeat;
+      background-size: 90px;
+      background-position: 50% calc(50% - 10px);
+      border: none !important;
+      -webkit-box-shadow: none !important;
+      box-shadow: none !important; }
+      .t-vcloud-payment .bl-video-js .vjs-big-play-button:before {
+        content: "";
+        display: none; }
+      .t-vcloud-payment .bl-video-js .vjs-big-play-button:hover {
+        background-color: transparent;
+        opacity: .7; }
+      .t-vcloud-payment .bl-video-js .vjs-big-play-button .vjs-icon-placeholder {
+        display: none; }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment .bl-video-js .vjs-big-play-button {
+          background-size: 50px; } }
+    .t-vcloud-payment .bl-video-js.player-small {
+      border-radius: 0px;
+      text-align: center; }
+      .t-vcloud-payment .bl-video-js.player-small .vjs-big-play-button {
+        background-size: 60px; }
+    .t-vcloud-payment .bl-video-js .wrap-top-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100px;
+      background-color: transparent;
+      background-image: -moz-linear-gradient(90deg, transparent 0%, transparent 10%, rgba(0, 0, 0, 0.8) 100%);
+      background-image: -webkit-linear-gradient(90deg, transparent 0%, transparent 10%, rgba(0, 0, 0, 0.8) 100%);
+      background-image: -ms-linear-gradient(90deg, transparent 0%, transparent 10%, rgba(0, 0, 0, 0.8) 100%); }
+    .t-vcloud-payment .bl-video-js .wrap-bottom-video {
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      z-index: 999;
+      width: 100%;
+      height: 100px; }
+    .t-vcloud-payment .bl-video-js .bl-title-in-video {
+      position: absolute;
+      z-index: 1000;
+      color: #fff;
+      top: 20px;
+      left: 20px;
+      text-align: left !important;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .t-vcloud-payment .bl-video-js .bl-title-in-video h1 {
+        font-size: 24px;
+        font-weight: 900; }
+      .t-vcloud-payment .bl-video-js .bl-title-in-video small {
+        font-size: 18px;
+        padding-left: 0px;
+        display: none !important; }
+        .t-vcloud-payment .bl-video-js .bl-title-in-video small span {
+          padding-left: 10px;
+          padding-right: 10px; }
+      @media (max-width: 767.98px) {
+        .t-vcloud-payment .bl-video-js .bl-title-in-video {
+          top: 5px;
+          left: 5px;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+          .t-vcloud-payment .bl-video-js .bl-title-in-video h1 {
+            font-size: 14px;
+            width: 100%; }
+          .t-vcloud-payment .bl-video-js .bl-title-in-video small {
+            font-size: 12px;
+            display: block; } }
+      .t-vcloud-payment .bl-video-js .bl-title-in-video .bl-real-time {
+        padding-top: 0;
+        font-size: 1rem;
+        position: relative; }
+        .t-vcloud-payment .bl-video-js .bl-title-in-video .bl-real-time:before {
+          display: inline-block;
+          content: "";
+          width: 5px;
+          height: 5px;
+          background-color: #fff;
+          border-radius: 50%;
+          margin-right: 3px; }
+        @media (max-width: 767.98px) {
+          .t-vcloud-payment .bl-video-js .bl-title-in-video .bl-real-time {
+            font-size: 12px; } }
+    .t-vcloud-payment .bl-video-js .bl-top-video {
+      position: absolute;
+      top: 15px;
+      right: 10px; }
+      @media (max-width: 767.98px) {
+        .t-vcloud-payment .bl-video-js .bl-top-video {
+          top: 5px;
+          right: 5px; } }
+    .t-vcloud-payment .bl-video-js .icon {
+      cursor: pointer;
+      width: 28px;
+      height: 28px; }
+    .t-vcloud-payment .bl-video-js .layer-load-error {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1010;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      padding: 20px;
+      text-align: center; }
+      .t-vcloud-payment .bl-video-js .layer-load-error span {
+        font-size: 1.5rem;
+        width: 100%; }
+      .t-vcloud-payment .bl-video-js .layer-load-error .icon {
+        margin-right: 15px; }
+    .t-vcloud-payment .bl-video-js .icon-speed {
+      position: absolute;
+      right: 7px;
+      width: 25px;
+      height: 25px; }
+  .t-vcloud-payment .bl-video-js-height {
+    padding-bottom: 0px;
+    height: auto; }
+  .t-vcloud-payment .bl-camera-review {
+    padding-top: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-camera-review .col-lg-8 {
+        max-width: 70%; } }
+    @media only screen and (max-width: 1380px) {
+      .t-vcloud-payment .bl-camera-review .col-lg-8 {
+        max-width: 1000px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+        flex: 0 0 auto; } }
+  @media only screen and (min-width: 1000px) and (max-width: 1380px) {
+    .t-vcloud-payment .bl-camera-review-info .col-lg-8 {
+      max-width: inherit;
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 70%;
+      flex: 0 0 70%; }
+    .t-vcloud-payment .bl-camera-review-info .col-lg-4 {
+      -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+      flex: 0 0 30%; } }
+  .t-vcloud-payment .breadcrumb {
+    background-color: transparent;
+    padding-left: 0;
+    padding-top: 30px;
+    margin-bottom: -20px; }
+    .t-vcloud-payment .breadcrumb a {
+      color: #5E6466; }
+    .t-vcloud-payment .breadcrumb .active a {
+      color: #13599F; }
+  .t-vcloud-payment .s-header {
+    background: url(../images/bg_header.jpg) no-repeat center top;
+    padding-top: calc(150/1440*100%);
+    padding-bottom: calc(240/1440*100%); }
+    .t-vcloud-payment .s-header .row {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .t-vcloud-payment .s-header .jumbotron {
+      color: #fff;
+      font-weight: 300; }
+      .t-vcloud-payment .s-header .jumbotron p {
+        font-size: 1.25rem;
+        padding-top: 15px;
+        padding-bottom: 15px; }
+      @media (min-width: 1200px) {
+        .t-vcloud-payment .s-header .jumbotron {
+          padding-right: 100px; }
+          .t-vcloud-payment .s-header .jumbotron p {
+            padding-top: 20px;
+            padding-bottom: 20px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-header {
+        padding-top: 100px; } }
+  .t-vcloud-payment .s-title {
+    font-weight: 900;
+    text-align: center;
+    font-size: 1.625rem;
+    color: #13599F;
+    margin-bottom: 25px;
+    padding-top: 40px; }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .s-title {
+        font-size: 1.875rem; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .s-title {
+        padding-top: 0;
+        font-size: 1.375rem;
+        text-align: left !important; }
+        .t-vcloud-payment .s-title .btn {
+          padding-left: 15px;
+          padding-right: 15px; } }
+  .t-vcloud-payment .s-title-in {
+    font-weight: 900;
+    font-size: 1.375rem;
+    color: #13599F;
+    margin-bottom: 30px;
+    padding-top: 40px; }
+    .t-vcloud-payment .s-title-in:after {
+      content: " ";
+      display: table;
+      clear: both; }
+    .t-vcloud-payment .s-title-in small {
+      font-weight: 400;
+      font-size: 14px;
+      display: block;
+      padding-top: 0px; }
+    .t-vcloud-payment .s-title-in small.inline {
+      padding-top: 5px;
+      display: inline-block; }
+    @media only screen and (min-width: 1380px) {
+      .t-vcloud-payment .s-title-in {
+        font-size: 1.5rem; }
+        .t-vcloud-payment .s-title-in small {
+          font-size: 16px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-title-in {
+        padding-top: 10px;
+        margin-bottom: 15px;
+        font-size: 1rem; }
+        .t-vcloud-payment .s-title-in .btn {
+          height: 30px;
+          line-height: 30px;
+          padding-left: 10px;
+          padding-right: 10px; }
+        .t-vcloud-payment .s-title-in small {
+          font-size: 12px; } }
+  .t-vcloud-payment .s-find-table {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px; }
+    .t-vcloud-payment .s-find-table .txt-head {
+      color: #13599F;
+      font-weight: 700;
+      margin-top: 15px; }
+    .t-vcloud-payment .s-find-table .btn {
+      padding-left: 20px;
+      padding-right: 20px; }
+    .t-vcloud-payment .s-find-table .btn-sm {
+      font-size: 12px;
+      font-weight: normal;
+      padding-right: 10px;
+      padding-left: 10px;
+      margin-left: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-find-table {
+        padding-left: 0;
+        padding-right: 0;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 0; }
+        .t-vcloud-payment .s-find-table .txt-head {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          margin-bottom: 20px; }
+        .t-vcloud-payment .s-find-table .txt-search {
+          margin-top: 10px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; } }
+  .t-vcloud-payment .g-search {
+    display: inline-block;
+    margin-right: 20px; }
+    .t-vcloud-payment .g-search.has-icon.form-group {
+      margin-bottom: 0; }
+      .t-vcloud-payment .g-search.has-icon.form-group .icon {
+        left: 15px; }
+      .t-vcloud-payment .g-search.has-icon.form-group .form-control {
+        height: 45px;
+        border-radius: 25px;
+        min-width: 340px;
+        padding-left: 35px; }
+      @media (max-width: 767.98px) {
+        .t-vcloud-payment .g-search.has-icon.form-group .form-control {
+          min-width: auto; } }
+  .t-vcloud-payment .bl-brand {
+    margin: 40px auto;
+    text-align: center;
+    max-width: 650px; }
+    .t-vcloud-payment .bl-brand .w1 {
+      width: 300px;
+      display: inline-block; }
+  .t-vcloud-payment .wrap-form {
+    background-color: #F0FCFF;
+    border-radius: 0px;
+    border: 2px solid #AECBE2;
+    padding: 35px 60px 20px 60px;
+    max-width: 500px;
+    margin: 0 auto; }
+    .t-vcloud-payment .wrap-form .nav {
+      margin-left: -60px;
+      margin-right: -60px;
+      margin-bottom: 40px;
+      margin-top: 40px;
+      border-bottom: 1px solid #AECBE2; }
+    .t-vcloud-payment .wrap-form .nav-pills .nav-link {
+      border-radius: 0;
+      padding-top: 15px;
+      padding-bottom: 15px; }
+    .t-vcloud-payment .wrap-form .nav-pills .nav-link.active, .t-vcloud-payment .wrap-form .nav-pills .show > .nav-link {
+      background-color: #13599F; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .wrap-form {
+        padding: 30px; } }
+  .t-vcloud-payment .wrap-form-expand {
+    max-width: 600px; }
+  .t-vcloud-payment .s-login {
+    min-height: 100vh;
+    background: url(../images/bg_login.jpg) no-repeat center 0px; }
+  .t-vcloud-payment .bl-form .s-title {
+    margin-bottom: 30px;
+    padding-top: 10px;
+    text-align: center !important; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-form .s-title {
+        font-size: 18px; } }
+  .t-vcloud-payment .bl-form-login .form-control {
+    border-color: #252a3e;
+    border-width: 1px; }
+  .t-vcloud-payment .bl-form-login .custom-checkbox .custom-control-label {
+    color: #252a3e; }
+  .t-vcloud-payment .bl-form-login .custom-checkbox .custom-control-label::before {
+    border: 1px solid #252a3e; }
+  .t-vcloud-payment .bl-form-login .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #252a3e; }
+  .t-vcloud-payment .bl-form-login .label {
+    color: #252a3e;
+    font-size: 13px;
+    padding-bottom: 5px; }
+  .t-vcloud-payment .bl-form-login .txt-share {
+    font-size: 14px;
+    margin-top: -15px;
+    margin-bottom: 20px; }
+  .t-vcloud-payment .bl-form-login .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .t-vcloud-payment .bl-form-login .sso-login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .t-vcloud-payment .bl-form-success {
+    text-align: center; }
+    .t-vcloud-payment .bl-form-success .s-title {
+      margin-bottom: 10px; }
+    .t-vcloud-payment .bl-form-success .g-button {
+      margin-top: 15px; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-dashboard .col {
+      -ms-flex-preferred-size: 100% !important;
+      flex-basis: 100% !important; } }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .s-dashboard > .container > .row {
+      min-height: calc(100vh - 90px);
+      -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+      align-items: stretch; } }
+  .t-vcloud-payment .s-camera .bl-head, .t-vcloud-payment .s-camera .bl-video-cam {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    -webkit-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    transition: all .3s linear; }
+    .t-vcloud-payment .s-camera .bl-head.w70, .t-vcloud-payment .s-camera .bl-video-cam.w70 {
+      width: 70%; }
+  .t-vcloud-payment .s-camera .bl-head {
+    margin-bottom: 20px;
+    padding-top: 30px; }
+    .t-vcloud-payment .s-camera .bl-head .s-title-in {
+      padding-top: 0;
+      float: left;
+      margin-left: -50px; }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment .s-camera .bl-head .s-title-in {
+          text-align: center;
+          width: 100%;
+          text-transform: uppercase;
+          font-size: 20px;
+          margin-left: 0; } }
+  .t-vcloud-payment .s-camera .bl-list-view .btn-outline-secondary {
+    margin-right: 20px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-camera .bl-list-view .btn-outline-secondary {
+        margin-right: 5px;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .t-vcloud-payment .s-camera .bl-list-view .btn-secondary {
+    height: 40px;
+    line-height: 38px;
+    padding-left: 15px;
+    padding-right: 15px; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-camera .bl-list-view .btn-group-toggle {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+  .t-vcloud-payment .s-camera .bl-player-foot {
+    padding-top: 20px; }
+    .t-vcloud-payment .s-camera .bl-player-foot h1 {
+      font-size: 1.5625rem;
+      color: #13599F;
+      font-weight: 900; }
+    .t-vcloud-payment .s-camera .bl-player-foot small {
+      font-size: 1.25rem; }
+      .t-vcloud-payment .s-camera .bl-player-foot small span {
+        padding-left: 10px;
+        padding-right: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-camera .bl-player-foot {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .t-vcloud-payment .s-camera .bl-player-foot h1 {
+          margin-bottom: 20px; }
+        .t-vcloud-payment .s-camera .bl-player-foot small {
+          display: block; }
+          .t-vcloud-payment .s-camera .bl-player-foot small span {
+            padding-left: 0; } }
+  .t-vcloud-payment .s-camera .bl-player-title {
+    padding-top: 15px;
+    margin-bottom: 40px;
+    position: relative; }
+    .t-vcloud-payment .s-camera .bl-player-title h1 {
+      font-size: 1.375rem;
+      color: #13599F;
+      font-weight: 900; }
+    .t-vcloud-payment .s-camera .bl-player-title small {
+      font-size: 0.875rem;
+      color: #000;
+      display: block;
+      padding-top: 5px; }
+    .t-vcloud-payment .s-camera .bl-player-title .bl-edit-small {
+      position: absolute;
+      right: -7px;
+      bottom: -8px; }
+      .t-vcloud-payment .s-camera .bl-player-title .bl-edit-small .btn {
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8); }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-camera .bl-player-title {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .t-vcloud-payment .s-camera .bl-player-title h1 {
+          margin-bottom: 20px;
+          font-size: 1.125rem; }
+        .t-vcloud-payment .s-camera .bl-player-title small {
+          display: block; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-camera .bl-list-view {
+      text-align: center !important; } }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .s-agency {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+  .t-vcloud-payment .col-nav-right {
+    max-width: 290px;
+    border-right: 1px solid #AECBE2;
+    background-color: #f0fcff;
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0;
+    z-index: 1000;
+    -webkit-transition: all .35s ease 0s;
+    -o-transition: all .35s ease 0s;
+    transition: all .35s ease 0s; }
+  .t-vcloud-payment .col-body-fluid {
+    position: relative; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .col-body-fluid {
+        padding-left: 290px;
+        -webkit-transition: all .35s ease 0s;
+        -o-transition: all .35s ease 0s;
+        transition: all .35s ease 0s; } }
+  .t-vcloud-payment .full-h {
+    position: relative; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .full-h {
+        min-height: 100vh; } }
+  .t-vcloud-payment.menu-active .col-nav-right {
+    left: -290px; }
+  .t-vcloud-payment.menu-active .navbar-right .menu-trigger {
+    right: -60px;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+  .t-vcloud-payment.menu-active .col-body-fluid {
+    padding-left: 0; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment.menu-active .col-nav-right {
+      left: -290px; }
+    .t-vcloud-payment.menu-active .col-body-fluid {
+      padding-left: 15px; } }
+  @media (min-width: 992px) {
+    .t-vcloud-payment.menu-active .s-view-video {
+      padding-left: 60px; } }
+  .t-vcloud-payment .col-max {
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px; }
+  .t-vcloud-payment .col-max-in {
+    max-width: 99%;
+    margin-left: auto;
+    margin-right: auto; }
+  .t-vcloud-payment .g-chart .title-chart {
+    margin-bottom: 20px;
+    font-size: 0.875rem;
+    color: #13599F;
+    font-weight: 700;
+    text-align: center; }
+  .t-vcloud-payment .g-chart .col {
+    -ms-flex-preferred-size: 28.333%;
+    flex-basis: 28.333%; }
+  .t-vcloud-payment .g-chart .bl-chat-sub {
+    -ms-flex-preferred-size: 15%;
+    flex-basis: 15%; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .g-chart {
+      margin-left: 0;
+      margin-right: 0;
+      -webkit-box-orient: vertical !important;
+      -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+      flex-direction: column !important; }
+      .t-vcloud-payment .g-chart .col {
+        -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+        margin-bottom: 30px; }
+      .t-vcloud-payment .g-chart .bl-chat-sub {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; } }
+  .t-vcloud-payment .bl-map {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto; }
+    .t-vcloud-payment .bl-map .img-fluid {
+      width: 100%; }
+  .t-vcloud-payment .bl-map-fluid {
+    max-width: 100%; }
+  .t-vcloud-payment .row-sub {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .t-vcloud-payment .square {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle; }
+  .t-vcloud-payment .bg-green {
+    background-color: #4CDA64; }
+  .t-vcloud-payment .bg-orange {
+    background-color: #F34E44; }
+  .t-vcloud-payment .bl-np {
+    padding-top: 15px;
+    padding-bottom: 0px;
+    margin-bottom: -10px; }
+    .t-vcloud-payment .bl-np .btn {
+      padding-left: 15px;
+      padding-right: 15px;
+      height: 40px;
+      line-height: 40px; }
+  .t-vcloud-payment .bl-timeline {
+    margin-top: 30px;
+    margin-bottom: 30px; }
+  .t-vcloud-payment .bl-select-timeline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0px; }
+    .t-vcloud-payment .bl-select-timeline .form-group {
+      margin-left: 25px;
+      margin-right: 35px; }
+    .t-vcloud-payment .bl-select-timeline .input-group {
+      border: 1px solid #13599F;
+      border-radius: 0px; }
+    .t-vcloud-payment .bl-select-timeline .form-control {
+      height: 38px; }
+    .t-vcloud-payment .bl-select-timeline .input-group-addon {
+      padding: 5px 0px 5px 10px;
+      border: 2px solid #13599F;
+      border-left: 0; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-select-timeline {
+        -webkit-box-orient: vertical !important;
+        -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+        flex-direction: column !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+        .t-vcloud-payment .bl-select-timeline .form-group {
+          margin-left: 5px;
+          margin-right: 5px; }
+        .t-vcloud-payment .bl-select-timeline .input-group {
+          margin-top: 10px; }
+        .t-vcloud-payment .bl-select-timeline .btn-group {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          width: 100%;
+          text-align: center; }
+        .t-vcloud-payment .bl-select-timeline .btn-group-toggle {
+          margin-bottom: 15px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-pack: distribute;
+          justify-content: space-around; }
+        .t-vcloud-payment .bl-select-timeline .btn-live {
+          margin-left: 5px;
+          margin-right: 5px; }
+        .t-vcloud-payment .bl-select-timeline .btn {
+          margin: 0 0 10px 0 !important; }
+        .t-vcloud-payment .bl-select-timeline .btn-download-cl {
+          margin-left: 0; } }
+    .t-vcloud-payment .bl-select-timeline .style-c {
+      height: 50px;
+      margin-top: -5px; }
+      .t-vcloud-payment .bl-select-timeline .style-c .btn-group {
+        border: 0px;
+        font-size: 11px;
+        width: 55px;
+        height: 55px;
+        background: url(../images/icon_replay_time.png) no-repeat center center;
+        background-size: 100%;
+        background-color: transparent !important;
+        text-transform: none;
+        margin-right: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        .t-vcloud-payment .bl-select-timeline .style-c .btn-group.active, .t-vcloud-payment .bl-select-timeline .style-c .btn-group:hover {
+          color: #f84c41;
+          font-weight: bold; }
+  .t-vcloud-payment .box-shadow {
+    -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1); }
+  .t-vcloud-payment .title-p {
+    color: #13599F;
+    font-size: 1.125rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .title-p {
+        font-size: 1rem; } }
+  .t-vcloud-payment .s-title-big {
+    text-align: center;
+    font-size: 1.5625rem;
+    text-transform: uppercase;
+    color: #13599F;
+    margin-bottom: 20px; }
+    .t-vcloud-payment .s-title-big span {
+      width: 100%;
+      text-align: center; }
+  .t-vcloud-payment .bl-wraper .row-collapse {
+    margin-bottom: 20px;
+    margin-top: 0;
+    max-width: 100%; }
+  .t-vcloud-payment .card-table-payment {
+    border-radius: 0px;
+    text-align: left;
+    padding: 0; }
+    .t-vcloud-payment .card-table-payment .card-header {
+      background-color: #13599F;
+      color: #fff;
+      font-size: 16px;
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      text-align: center; }
+    .t-vcloud-payment .card-table-payment .card-body {
+      padding: 0; }
+  .t-vcloud-payment .card-review-info {
+    font-size: 14px; }
+    .t-vcloud-payment .card-review-info .col-6 {
+      margin-bottom: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .card-review-info {
+        margin-top: 30px; } }
+  .t-vcloud-payment .hightlight {
+    color: #13599F; }
+  .t-vcloud-payment .table-payment {
+    text-align: center;
+    margin-bottom: 0;
+    color: #929292;
+    font-size: 0.875rem; }
+    .t-vcloud-payment .table-payment th {
+      color: #000; }
+    .t-vcloud-payment .table-payment .text-secondary {
+      font-weight: 700;
+      padding-left: 20px;
+      background-color: #eee; }
+    .t-vcloud-payment .table-payment [data-label]:before {
+      top: -7px; }
+    .t-vcloud-payment .table-payment td:hover, .t-vcloud-payment .table-payment .active {
+      background-color: #13599F;
+      color: #fff; }
+  .t-vcloud-payment .table-order {
+    font-size: 1.125rem;
+    color: #13599F; }
+    .t-vcloud-payment .table-order th {
+      background-color: #13599F;
+      color: #fff; }
+    .t-vcloud-payment .table-order td {
+      border-bottom: 2px solid #D2E2F3; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .table-order.pr td:first-child, .t-vcloud-payment .table-order.pr th:first-child {
+        padding-left: 30px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .table-order tr:last-child td {
+        border: 0; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .table-order {
+        font-size: 1rem; } }
+  .t-vcloud-payment .has-select {
+    cursor: pointer; }
+  .t-vcloud-payment .bl-check-month {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center; }
+    .t-vcloud-payment .bl-check-month .btn-group {
+      height: auto; }
+  .t-vcloud-payment .bl-total {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-size: 1rem; }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .bl-total {
+        font-size: 1.125rem; } }
+    .t-vcloud-payment .bl-total .row {
+      margin-bottom: 10px; }
+    .t-vcloud-payment .bl-total .text-secondary {
+      text-align: right;
+      font-weight: 700; }
+    .t-vcloud-payment .bl-total .txt-small {
+      color: #13599F;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+    .t-vcloud-payment .bl-total .border-top {
+      padding-top: 10px;
+      border-top: 2px solid #D2E2F3 !important;
+      margin-left: 0;
+      margin-right: 0; }
+    .t-vcloud-payment .bl-total .form-control {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      text-align: right; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-total .txt-small .col-8 {
+        padding-left: 40px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-total {
+        border-top: 2px solid #D2E2F3;
+        margin-top: 20px;
+        padding-top: 30px; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-total {
+        font-size: 1rem; }
+        .t-vcloud-payment .bl-total .txt-small {
+          font-size: 16px; } }
+    .t-vcloud-payment .bl-total .row-button {
+      margin-top: 40px;
+      margin-bottom: 20px;
+      margin-left: 0; }
+      .t-vcloud-payment .bl-total .row-button .btn {
+        min-width: 150px; }
+  .t-vcloud-payment .btn-check-m {
+    width: 66px;
+    height: 66px;
+    line-height: 58px;
+    padding: 5px;
+    background-color: #fff;
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50% !important;
+    margin-left: 10px !important;
+    margin-right: 10px !important;
+    position: relative;
+    font-size: 0.75rem;
+    text-align: center;
+    text-transform: none; }
+    .t-vcloud-payment .btn-check-m:hover, .t-vcloud-payment .btn-check-m.active {
+      background-color: #13599F;
+      color: #fff; }
+  .t-vcloud-payment .bl-info-customer {
+    margin-bottom: 30px;
+    padding-left: 50px; }
+    .t-vcloud-payment .bl-info-customer .icon {
+      width: 17px;
+      height: 17px;
+      margin-right: 15px; }
+    .t-vcloud-payment .bl-info-customer .row-cus {
+      color: #13599F;
+      font-size: 1.125rem;
+      margin-bottom: 15px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-info-customer {
+        padding-left: 30px; }
+        .t-vcloud-payment .bl-info-customer .row-cus {
+          font-size: 1rem; } }
+  .t-vcloud-payment .bl-method-payment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 0; }
+    .t-vcloud-payment .bl-method-payment .bl-method {
+      position: relative;
+      height: 100px;
+      padding-top: 25px;
+      border: 1px solid #13599F;
+      width: 30%;
+      padding-left: 70px;
+      padding-right: 30px;
+      color: #13599F;
+      margin-left: 35px;
+      margin-right: 35px; }
+      .t-vcloud-payment .bl-method-payment .bl-method h4 {
+        font-size: 1.25rem;
+        font-weight: 900; }
+      .t-vcloud-payment .bl-method-payment .bl-method small {
+        font-size: 11px;
+        display: block;
+        padding-top: 5px; }
+      .t-vcloud-payment .bl-method-payment .bl-method:before {
+        display: block;
+        content: "";
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 3px solid #13599F;
+        position: absolute;
+        top: 28px;
+        left: 30px; }
+      .t-vcloud-payment .bl-method-payment .bl-method.active, .t-vcloud-payment .bl-method-payment .bl-method:hover {
+        background-color: #13599F;
+        color: #fff; }
+        .t-vcloud-payment .bl-method-payment .bl-method.active:before, .t-vcloud-payment .bl-method-payment .bl-method:hover:before {
+          background-color: #13599F;
+          border-color: #fff; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-method-payment .bl-method {
+        width: 100%;
+        margin-bottom: 10px;
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 50px;
+        padding-right: 20px; }
+        .t-vcloud-payment .bl-method-payment .bl-method:before {
+          left: 20px;
+          top: 18px; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-method-payment .bl-method {
+        margin-left: 0;
+        margin-right: 0; } }
+  .t-vcloud-payment .bl-support-za {
+    padding-left: 5px;
+    padding-top: 10px;
+    font-size: 0.875rem;
+    font-weight: 700; }
+  .t-vcloud-payment .bl-finish-ck {
+    background-color: #F7FCFF;
+    margin: 30px 10px; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-finish-ck {
+        padding: 40px;
+        margin: 30px;
+        min-height: 90vh; } }
+  .t-vcloud-payment .bl-notice {
+    background-color: #FFF6D0;
+    padding: 20px;
+    text-align: center;
+    font-size: 17px;
+    max-width: 1180px;
+    margin: 0 auto; }
+  .t-vcloud-payment .bl-notification {
+    font-size: 1.25rem;
+    color: #f84c41; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-notification {
+        font-size: 1rem; } }
+  .t-vcloud-payment .bl-cancel {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    text-align: right;
+    font-size: 1.125rem; }
+    .t-vcloud-payment .bl-cancel a {
+      color: #F84C41; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-cancel {
+        text-align: center; } }
+  .t-vcloud-payment .bl-finish-footer {
+    font-size: 1.0625rem;
+    color: #13599F; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-finish-footer {
+        padding: 50px 0px; }
+        .t-vcloud-payment .bl-finish-footer .address {
+          padding-right: 100px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-finish-footer {
+        border-top: 1px solid #ddd;
+        padding-top: 30px; }
+        .t-vcloud-payment .bl-finish-footer .address {
+          padding-bottom: 20px; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-finish-footer {
+        font-size: 1rem; } }
+  .t-vcloud-payment .bl-finish-zalo {
+    margin: 30px 0px;
+    padding: 10px; }
+    .t-vcloud-payment .bl-finish-zalo h4 {
+      font-size: 1.125rem;
+      text-align: center;
+      font-weight: 900;
+      color: #13599F; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-finish-zalo {
+        padding: 40px;
+        margin: 30px; }
+        .t-vcloud-payment .bl-finish-zalo h4 {
+          font-size: 1.5625rem; } }
+  .t-vcloud-payment .note-zalo {
+    color: #13599F;
+    font-size: 0.9375rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 20px 0; }
+    .t-vcloud-payment .note-zalo a {
+      font-weight: 900; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .note-zalo {
+        font-size: 1.0625rem; } }
+  .t-vcloud-payment .bl-qrcode {
+    padding: 30px 0;
+    text-align: center; }
+  .t-vcloud-payment .bl-cl {
+    padding: 5px 30px 5px 50px;
+    color: #13599F;
+    font-size: 1.125rem;
+    font-weight: 900;
+    border-bottom: 1px solid #D2E2F3; }
+    .t-vcloud-payment .bl-cl span {
+      display: block;
+      color: #13599F;
+      font-weight: 500; }
+    .t-vcloud-payment .bl-cl .text-secondary {
+      font-weight: 900; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-cl {
+        border-right: 1px solid #929292;
+        border-bottom: 0; }
+        .t-vcloud-payment .bl-cl.text-right {
+          padding-right: 60px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-cl {
+        padding: 10px 20px;
+        font-size: 16px; }
+        .t-vcloud-payment .bl-cl.text-right {
+          text-align: left !important; } }
+  .t-vcloud-payment .bl-finish-online {
+    background-color: #eafbfc;
+    padding: 10px 0;
+    -webkit-box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05); }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-finish-online {
+        max-width: 70%;
+        margin: 30px auto; }
+        .t-vcloud-payment .bl-finish-online .row-info-client .col-md-4 {
+          padding: 30px 10px 10px; } }
+  .t-vcloud-payment .bl-list-card {
+    text-align: center; }
+    .t-vcloud-payment .bl-list-card a {
+      margin: 5px;
+      display: inline-block; }
+  .t-vcloud-payment .bl-list-banks {
+    text-align: center; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .bl-list-banks {
+        padding-left: 80px;
+        padding-right: 80px; } }
+    .t-vcloud-payment .bl-list-banks a {
+      margin: 5px;
+      display: inline-block; }
+  .t-vcloud-payment .row-pat {
+    height: 56px;
+    width: 100%;
+    background: url(../images/bg_line.png) repeat-x; }
+  .t-vcloud-payment .row-credit-card {
+    padding: 30px;
+    max-width: 1000px;
+    margin: 0 auto; }
+    .t-vcloud-payment .row-credit-card .form-group {
+      margin-bottom: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .row-credit-card {
+        padding: 15px; } }
+    .t-vcloud-payment .row-credit-card .mx-auto {
+      display: block; }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .tab-method {
+      padding-left: 0px;
+      padding-right: 20px; } }
+  .t-vcloud-payment .table-info-pay {
+    max-width: 50%;
+    margin: 40px auto 0;
+    background-color: #DCF8F9;
+    border: 1px solid #13599F;
+    color: #13599F;
+    font-size: 0.875rem; }
+    .t-vcloud-payment .table-info-pay td {
+      border-right: 1px solid #13599F;
+      border-bottom: 1px solid #13599F;
+      border-top: 1px solid #13599F; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .table-info-pay {
+        max-width: 100%; } }
+  .t-vcloud-payment .row-check {
+    border-top: 2px solid #D2E2F3;
+    padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px; }
+  .t-vcloud-payment .custom-control-label {
+    color: #13599F;
+    font-size: 1.125rem;
+    padding-left: 10px; }
+    .t-vcloud-payment .custom-control-label:before {
+      background-color: transparent;
+      border: 2px solid #13599F;
+      width: 20px;
+      height: 20px; }
+    .t-vcloud-payment .custom-control-label:after {
+      background-size: 70% 70%;
+      left: 3px;
+      top: 6px; }
+  .t-vcloud-payment .custom-checkbox .custom-control-label:before {
+    border-radius: 0px; }
+  .t-vcloud-payment .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #13599F; }
+  .t-vcloud-payment .custom-checkbox {
+    margin-top: 25px;
+    display: inline-block;
+    vertical-align: middle; }
+    .t-vcloud-payment .custom-checkbox label {
+      font-size: 13px; }
+    .t-vcloud-payment .custom-checkbox.mt-0 {
+      padding-top: 5px; }
+  .t-vcloud-payment .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    left: 4px !important;
+    top: 8px !important; }
+  @media (max-width: 767.98px) {
+    .t-vcloud-payment .custom-control-label {
+      font-size: 1rem; } }
+  .t-vcloud-payment .row-list-credit {
+    padding: 50px; }
+    .t-vcloud-payment .row-list-credit .title-row {
+      display: block;
+      margin-bottom: 30px;
+      font-size: 1.25rem;
+      color: #13599F; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .row-list-credit {
+        padding: 30px; }
+        .t-vcloud-payment .row-list-credit .title-row {
+          font-size: 16px;
+          margin-left: -5px;
+          font-weight: 900; } }
+  .t-vcloud-payment .footer-payment {
+    padding-top: 30px;
+    padding-bottom: 80px; }
+    .t-vcloud-payment .footer-payment .btn {
+      min-width: 155px; }
+    .t-vcloud-payment .footer-payment .btn-form {
+      padding-left: 40px;
+      padding-right: 40px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .footer-payment .text-right {
+        text-align: center !important; } }
+  .t-vcloud-payment .btn-toggle {
+    margin: 0 12rem 0 1rem;
+    padding: 0;
+    position: relative;
+    border: none;
+    height: 23px;
+    width: 45px;
+    border-radius: 1.5rem;
+    color: #6b7381;
+    background: #bdc1c8; }
+  .t-vcloud-payment .btn-toggle:focus,
+  .t-vcloud-payment .btn-toggle.focus,
+  .t-vcloud-payment .btn-toggle:focus.active,
+  .t-vcloud-payment .btn-toggle.focus.active {
+    outline: none; }
+  .t-vcloud-payment .btn-toggle:before,
+  .t-vcloud-payment .btn-toggle:after {
+    line-height: 1.5rem;
+    width: 4.5rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 1px;
+    -webkit-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+    color: #13599F; }
+  .t-vcloud-payment .btn-toggle:after {
+    content: 'Xem tốt hơn với Flash';
+    right: -5rem;
+    color: #13599F;
+    text-transform: none;
+    font-size: 16px; }
+  .t-vcloud-payment .btn-toggle > .handle {
+    position: absolute;
+    top: 0.1875rem;
+    left: 0.1875rem;
+    width: 17px;
+    height: 17px;
+    border-radius: 1.125rem;
+    background: #fff;
+    -webkit-transition: left 0.25s;
+    -o-transition: left 0.25s;
+    transition: left 0.25s; }
+  .t-vcloud-payment .btn-toggle.active {
+    -webkit-transition: background-color 0.25s;
+    -o-transition: background-color 0.25s;
+    transition: background-color 0.25s; }
+  .t-vcloud-payment .btn-toggle.active > .handle {
+    left: 1.6rem;
+    -webkit-transition: left 0.25s;
+    -o-transition: left 0.25s;
+    transition: left 0.25s; }
+  .t-vcloud-payment .btn-toggle.active:before {
+    opacity: 0.5; }
+  .t-vcloud-payment .btn-toggle.active:after {
+    opacity: 1; }
+  .t-vcloud-payment .btn-toggle.active {
+    background-color: #13599F; }
+  .t-vcloud-payment .bl-form-bill {
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    .t-vcloud-payment .bl-form-bill .text-right {
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: #13599F;
+      padding-top: 6px; }
+    .t-vcloud-payment .bl-form-bill .row {
+      margin-bottom: 20px; }
+    .t-vcloud-payment .bl-form-bill .form-control {
+      border-color: #AECBE2; }
+      .t-vcloud-payment .bl-form-bill .form-control:focus {
+        border-color: #13599F; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-form-bill {
+        padding-top: 0; }
+        .t-vcloud-payment .bl-form-bill .text-right {
+          font-size: 1rem;
+          text-align: left !important;
+          padding-bottom: 5px; }
+        .t-vcloud-payment .bl-form-bill .row {
+          margin-bottom: 10px; } }
+  .t-vcloud-payment .bl-form-cerdit-card .form-group {
+    margin-bottom: 20px; }
+  .t-vcloud-payment .bl-form-cerdit-card .label {
+    font-size: 0.9375rem;
+    color: #13599F;
+    padding-bottom: 5px; }
+  @media (max-width: 767.98px) {
+    .t-vcloud-payment .bl-form-cerdit-card {
+      margin-left: -10px;
+      margin-right: -10px; } }
+  .t-vcloud-payment .bl-table-price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .t-vcloud-payment .bl-table-price .bl-buy-resolution {
+      -ms-flex-preferred-size: 12.5%;
+      flex-basis: 12.5%; }
+    .t-vcloud-payment .bl-table-price .bl-buy-resolution-fluid {
+      -ms-flex-preferred-size: AUTO;
+      flex-basis: AUTO; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-table-price {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .t-vcloud-payment .bl-table-price .bl-resolution {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex; }
+        .t-vcloud-payment .bl-table-price .bl-buy-resolution {
+          -ms-flex-preferred-size: 44%;
+          flex-basis: 44%;
+          margin-bottom: 25px;
+          margin-left: 2%;
+          margin-right: 2%; }
+        .t-vcloud-payment .bl-table-price .bl-buy-resolution-fluid {
+          -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+          margin-left: 0;
+          margin-right: 0; } }
+  .t-vcloud-payment .bl-resolution {
+    padding-right: 20px; }
+    .t-vcloud-payment .bl-resolution .tab-r {
+      position: relative;
+      border: 10px solid #aecbe2;
+      color: #13599F;
+      font-size: 1.875rem;
+      height: 110px;
+      margin-bottom: 10px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-weight: 900;
+      line-height: 30px;
+      cursor: pointer; }
+      .t-vcloud-payment .bl-resolution .tab-r span {
+        display: block;
+        font-size: 20px;
+        width: 100%;
+        text-align: center; }
+      .t-vcloud-payment .bl-resolution .tab-r:after {
+        display: block;
+        content: "";
+        width: 33px;
+        height: 33px;
+        background: url(../images/ar.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        top: 50%;
+        right: -32px;
+        margin-top: -16px; }
+      .t-vcloud-payment .bl-resolution .tab-r:hover, .t-vcloud-payment .bl-resolution .tab-r.active {
+        background-color: #13599f;
+        color: #fff; }
+        .t-vcloud-payment .bl-resolution .tab-r:hover:after, .t-vcloud-payment .bl-resolution .tab-r.active:after {
+          background-image: url(../images/ar_active2.png); }
+      @media only screen and (max-width: 1280px) {
+        .t-vcloud-payment .bl-resolution .tab-r {
+          min-width: 120px;
+          font-size: 1.5rem; }
+          .t-vcloud-payment .bl-resolution .tab-r span {
+            font-size: 14px; } }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment .bl-resolution .tab-r {
+          min-width: 30%;
+          margin: 10px 1% 30px;
+          font-size: 20px;
+          line-height: 22px; }
+          .t-vcloud-payment .bl-resolution .tab-r span {
+            font-size: 12px; }
+          .t-vcloud-payment .bl-resolution .tab-r:after {
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
+            right: 50%;
+            top: auto;
+            bottom: -32px;
+            margin-right: -20px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-resolution {
+        padding-right: 0; } }
+  .t-vcloud-payment .bl-buy-resolution {
+    margin: 0 12px;
+    text-align: center; }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .bl-buy-resolution .title {
+        font-size: 0.9375rem; }
+      .t-vcloud-payment .bl-buy-resolution .price {
+        font-size: 1.875rem; }
+        .t-vcloud-payment .bl-buy-resolution .price span {
+          font-size: 15px; }
+      .t-vcloud-payment .bl-buy-resolution .note {
+        font-size: 0.75rem; } }
+    .t-vcloud-payment .bl-buy-resolution .bl-bg {
+      background-color: #13599F;
+      color: #fff;
+      padding: 5px;
+      min-width: 120px; }
+    .t-vcloud-payment .bl-buy-resolution .title {
+      background-color: #F4FDFF;
+      padding: 10px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #13599F; }
+    .t-vcloud-payment .bl-buy-resolution .price {
+      color: #FFD008;
+      font-size: 1.5rem;
+      height: 130px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      font-weight: 700; }
+      .t-vcloud-payment .bl-buy-resolution .price span {
+        font-size: 13px;
+        color: #fff;
+        display: block;
+        width: 100%;
+        font-weight: normal; }
+    .t-vcloud-payment .bl-buy-resolution .txt-f {
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding-top: 10px; }
+      .t-vcloud-payment .bl-buy-resolution .txt-f span {
+        font-size: 18px; }
+    .t-vcloud-payment .bl-buy-resolution .note {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 0.6875rem;
+      height: 160px;
+      border-top: 2px solid rgba(249, 249, 249, 0.09);
+      margin-left: 10px;
+      margin-right: 10px; }
+    .t-vcloud-payment .bl-buy-resolution .btn {
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 20px; }
+  .t-vcloud-payment .bl-table-price-fluid {
+    margin-top: 30px; }
+  .t-vcloud-payment .bl-resolution-fluid .tab-r {
+    width: 175px;
+    font-size: 1.5rem; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-resolution-fluid .tab-r {
+        width: 100%; } }
+  .t-vcloud-payment .bl-buy-resolution-fluid .price {
+    width: 20%;
+    min-height: inherit;
+    height: auto; }
+  .t-vcloud-payment .bl-buy-resolution-fluid .note {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 60%;
+    margin: 0;
+    min-height: inherit;
+    height: auto;
+    border: 0;
+    text-align: left; }
+    .t-vcloud-payment .bl-buy-resolution-fluid .note p {
+      margin-bottom: 5px;
+      font-style: italic;
+      width: 100%; }
+      .t-vcloud-payment .bl-buy-resolution-fluid .note p span {
+        font-weight: 700;
+        font-size: 20px; }
+  .t-vcloud-payment .bl-buy-resolution-fluid .g-bt {
+    text-align: right;
+    width: 20%;
+    padding-right: 20px; }
+  .t-vcloud-payment .bl-buy-resolution-fluid .btn-price {
+    color: #13599F; }
+  @media only screen and (max-width: 1300px) {
+    .t-vcloud-payment .bl-buy-resolution-fluid {
+      min-height: 120px; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .bl-buy-resolution-fluid .bl-bg {
+      padding-top: 10px; }
+    .t-vcloud-payment .bl-buy-resolution-fluid .d-flex {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+    .t-vcloud-payment .bl-buy-resolution-fluid .price, .t-vcloud-payment .bl-buy-resolution-fluid .note, .t-vcloud-payment .bl-buy-resolution-fluid .g-bt {
+      width: 100%;
+      padding-right: 0; }
+    .t-vcloud-payment .bl-buy-resolution-fluid .g-bt {
+      text-align: center;
+      padding: 0 0 10px; }
+      .t-vcloud-payment .bl-buy-resolution-fluid .g-bt .btn {
+        margin-top: 0; } }
+  .t-vcloud-payment .txt-padding {
+    padding: 0px 50px;
+    color: #13599F;
+    font-weight: 300; }
+    .t-vcloud-payment .txt-padding b {
+      font-weight: 900; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .txt-padding {
+        padding: 20px; } }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .bl-list-month {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 80px; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .bl-list-month {
+      margin-bottom: 30px; }
+      .t-vcloud-payment .bl-list-month .custom-control {
+        width: 100%;
+        margin-bottom: 20px; } }
+  .t-vcloud-payment .bl-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-right: -5px; }
+  .t-vcloud-payment .tab-setting .tab-panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 30px 30px;
+    padding-bottom: 0;
+    border: 2px solid #13599F; }
+    .t-vcloud-payment .tab-setting .tab-panel .bl-player-thumb {
+      margin: 0 5px 20px 5px;
+      -ms-flex-preferred-size: 32.3%;
+      flex-basis: 32.3%; }
+    .t-vcloud-payment .tab-setting .tab-panel .bl-foot {
+      padding-top: 0px; }
+    .t-vcloud-payment .tab-setting .tab-panel .mCSB_container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      padding: 10px 10px;
+      padding-bottom: 0; }
+      @media only screen and (min-width: 1440px) {
+        .t-vcloud-payment .tab-setting .tab-panel .mCSB_container {
+          padding: 10px 10px; } }
+    @media (max-width: 1199.98px) {
+      .t-vcloud-payment .tab-setting .tab-panel {
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+        .t-vcloud-payment .tab-setting .tab-panel .mCSB_container {
+          -ms-flex-pack: distribute;
+          justify-content: space-around; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .tab-setting .tab-panel .mCSB_container {
+        padding: 15px 0;
+        -ms-flex-pack: distribute;
+        justify-content: space-around; }
+      .t-vcloud-payment .tab-setting .tab-panel .bl-player-thumb {
+        -ms-flex-preferred-size: 300px;
+        flex-basis: 300px; } }
+  .t-vcloud-payment .tab-setting .mCustomScrollbar {
+    padding-right: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .tab-setting .mCustomScrollbar {
+        padding-left: 10px; } }
+  .t-vcloud-payment .mCSB_scrollTools .mCSB_draggerRail {
+    background: transparent;
+    width: 10px;
+    border-radius: 0px;
+    opacity: 1; }
+  .t-vcloud-payment .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background: #7CA9CE;
+    width: 10px;
+    border-radius: 0px; }
+    .t-vcloud-payment .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar:hover {
+      background-color: #13599F; }
+  .t-vcloud-payment .mCustomScrollBox {
+    width: 100%; }
+  .t-vcloud-payment .nav-tabs-setting .nav-link {
+    background-color: #D2E2F3;
+    color: #13599F;
+    border-radius: 0;
+    padding: 10px 25px;
+    margin-right: 10px;
+    text-transform: uppercase; }
+    .t-vcloud-payment .nav-tabs-setting .nav-link.active, .t-vcloud-payment .nav-tabs-setting .nav-link:hover {
+      background-color: #13599F;
+      color: #fff;
+      border-color: transparent; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .nav-tabs-setting .nav-link {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 14px; } }
+  .t-vcloud-payment .bl-add-cam {
+    text-align: center; }
+    .t-vcloud-payment .bl-add-cam a {
+      display: block;
+      color: #13599F;
+      font-size: 1.875rem;
+      font-weight: 700; }
+    .t-vcloud-payment .bl-add-cam .icon {
+      margin: 20px auto;
+      display: block; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-add-cam {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        bottom: auto;
+        right: auto;
+        z-index: 100;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -o-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%); }
+        .t-vcloud-payment .bl-add-cam a {
+          font-size: 1.5rem; }
+        .t-vcloud-payment .bl-add-cam .icon {
+          width: 70px;
+          height: 80px; } }
+  .t-vcloud-payment .bl-player-ip {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px; }
+    .t-vcloud-payment .bl-player-ip h1 {
+      font-size: 1.25rem;
+      color: #13599F;
+      margin: 0; }
+    .t-vcloud-payment .bl-player-ip .btn-small {
+      height: 25px;
+      line-height: 22px;
+      font-size: 10px;
+      padding-left: 5px;
+      padding-right: 5px; }
+    .t-vcloud-payment .bl-player-ip .dropdown-menu {
+      min-width: 145px;
+      padding-top: 0;
+      padding-bottom: 0; }
+    .t-vcloud-payment .bl-player-ip .dropdown-item {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 10px;
+      color: #13599F;
+      text-align: center;
+      border-bottom: 1px solid #D2E2F3; }
+    .t-vcloud-payment .bl-player-ip .dropdown-toggle::after {
+      margin-left: 5px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-player-ip h1 {
+        font-size: 14px;
+        font-weight: bold; } }
+  .t-vcloud-payment .bl-player-add {
+    background: #D2E2F3;
+    display: block; }
+    .t-vcloud-payment .bl-player-add .g-add {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      z-index: 100;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      color: #13599F;
+      text-align: center;
+      width: 100%; }
+    .t-vcloud-payment .bl-player-add .txt-p {
+      font-size: 20px;
+      padding-top: 10px; }
+    .t-vcloud-payment .bl-player-add .txt-big {
+      font-size: 1.75rem;
+      padding: 0;
+      font-weight: 700; }
+    .t-vcloud-payment .bl-player-add.bg-pass {
+      background: #C4C4C4; }
+  .t-vcloud-payment .bl-refresh {
+    margin-top: -10px;
+    margin-bottom: 20px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px; }
+    .t-vcloud-payment .bl-refresh .col-f {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      color: #13599F;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      float: left; }
+      .t-vcloud-payment .bl-refresh .col-f .form-control {
+        width: 300px;
+        margin-left: 15px;
+        margin-right: 15px; }
+    .t-vcloud-payment .bl-refresh .btn {
+      margin-right: 0; }
+    .t-vcloud-payment .bl-refresh .btn-primary {
+      float: right; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-refresh {
+        margin-top: 0; }
+        .t-vcloud-payment .bl-refresh .col-f {
+          width: 100%;
+          margin-bottom: 20px; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .bl-refresh {
+        display: block; }
+        .t-vcloud-payment .bl-refresh .col-f {
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+        .t-vcloud-payment .bl-refresh .col-f .form-control {
+          width: auto;
+          min-width: 120px; }
+        .t-vcloud-payment .bl-refresh .btn-primary {
+          display: block;
+          width: 100%; } }
+  .t-vcloud-payment .btn-icon-small {
+    height: 25px;
+    width: 25px;
+    line-height: 25px;
+    border-radius: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 5px; }
+    .t-vcloud-payment .btn-icon-small .icon {
+      margin: 0;
+      width: 15px;
+      height: 15px; }
+  .t-vcloud-payment .bl-alphabet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 40px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding-right: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px; }
+    .t-vcloud-payment .bl-alphabet span {
+      display: inline-block;
+      padding: 8px 10px;
+      color: #13599F;
+      margin-right: 2px;
+      cursor: pointer; }
+      .t-vcloud-payment .bl-alphabet span:hover, .t-vcloud-payment .bl-alphabet span.active {
+        background-color: #f84c41;
+        color: #fff; }
+      .t-vcloud-payment .bl-alphabet span:first-child {
+        padding-left: 15px;
+        padding-right: 15px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-alphabet {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: start;
+        padding-left: 10px;
+        padding-right: 10px; } }
+  .t-vcloud-payment .bl-capcha {
+    margin-bottom: 20px; }
+  .t-vcloud-payment .bl-player-thumb {
+    position: relative; }
+    .t-vcloud-payment .bl-player-thumb .layer-load {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 45px;
+      width: 100%;
+      background-color: #D2E2F3;
+      z-index: 500;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-line-pack: center;
+      align-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      .t-vcloud-payment .bl-player-thumb .layer-load .ppc-percents {
+        background-color: #D2E2F3; }
+        .t-vcloud-payment .bl-player-thumb .layer-load .ppc-percents span {
+          color: #13599F;
+          font-size: 40px; }
+      .t-vcloud-payment .bl-player-thumb .layer-load .progress-pie-chart {
+        background-color: #13599F;
+        -webkit-transform: scale(0.5);
+        -ms-transform: scale(0.5);
+        transform: scale(0.5); }
+  .t-vcloud-payment .g-label {
+    position: absolute;
+    bottom: 8px;
+    right: 8px; }
+  .t-vcloud-payment .g-label-top {
+    position: absolute;
+    top: 8px;
+    left: 8px; }
+  .t-vcloud-payment .label-re {
+    background: #fff;
+    height: 20px;
+    line-height: 20px;
+    color: #13599F;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    display: inline-block;
+    margin-left: 3px; }
+    .t-vcloud-payment .label-re.invert {
+      background-color: #13599F;
+      color: #fff; }
+  .t-vcloud-payment .g-note {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    z-index: 100;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 10px 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #000;
+    font-size: 10px;
+    text-align: left; }
+    .t-vcloud-payment .g-note p {
+      margin: 0;
+      padding: 5px 20px;
+      font-style: italic; }
+    .t-vcloud-payment .g-note .btn-small {
+      height: 20px;
+      line-height: 18px;
+      font-size: 8px;
+      padding-left: 5px;
+      padding-right: 5px; }
+  @media (min-width: 992px) {
+    .t-vcloud-payment .center-middle-pc {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      bottom: auto;
+      right: auto;
+      z-index: 100;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%); } }
+  .t-vcloud-payment .custom-r {
+    position: relative; }
+    .t-vcloud-payment .custom-r .custom-control-label {
+      padding-left: 5px;
+      padding-top: 3px;
+      color: #13599F;
+      font-size: 16px; }
+      .t-vcloud-payment .custom-r .custom-control-label:before {
+        background-color: transparent;
+        border: 2px solid #13599F; }
+    .t-vcloud-payment .custom-r .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: #13599F; }
+    .t-vcloud-payment .custom-r .custom-control-input:checked ~ .custom-control-label::after {
+      background: #13599F;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      width: 12px;
+      height: 12px;
+      top: 6px;
+      left: 2px; }
+  .t-vcloud-payment .note-price {
+    font-size: 0.9375rem;
+    text-align: right;
+    padding: 30px 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #13599F; }
+    @media (min-width: 768px) {
+      .t-vcloud-payment .note-price {
+        float: right;
+        text-align: left; } }
+  .t-vcloud-payment .row-select-resolution {
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-left: 40px;
+    padding-right: 0px;
+    position: relative; }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .row-select-resolution .form-control {
+        font-size: 1.25rem; }
+      .t-vcloud-payment .row-select-resolution .label-r {
+        font-size: 1.125rem; } }
+    .t-vcloud-payment .row-select-resolution .form-control {
+      border-color: #13599F;
+      border-width: 3px;
+      text-align: center;
+      height: 46px;
+      color: #13599F;
+      font-weight: 700; }
+    .t-vcloud-payment .row-select-resolution select.form-control:not([size]):not([multiple]) {
+      height: 46px;
+      color: #13599F;
+      font-weight: 700; }
+    .t-vcloud-payment .row-select-resolution .label-r {
+      padding-bottom: 10px;
+      color: #13599F;
+      text-align: center; }
+    .t-vcloud-payment .row-select-resolution .col-last {
+      max-width: 60px;
+      padding-top: 45px; }
+    .t-vcloud-payment .row-select-resolution .col-sort {
+      max-width: 200px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .row-select-resolution {
+        border: 2px solid #AECBE2;
+        padding-top: 15px;
+        position: relative;
+        padding-left: 0;
+        margin-left: 0px;
+        margin-right: 0px; }
+        .t-vcloud-payment .row-select-resolution .label-r {
+          text-align: left; }
+        .t-vcloud-payment .row-select-resolution .col-last, .t-vcloud-payment .row-select-resolution .col-sort {
+          max-width: 100%;
+          margin-bottom: 25px; }
+        .t-vcloud-payment .row-select-resolution .col {
+          margin-bottom: 15px; }
+        .t-vcloud-payment .row-select-resolution .col-last {
+          margin-top: 0;
+          padding-top: 0;
+          position: absolute;
+          top: 10px;
+          right: 0px;
+          width: auto; } }
+  .t-vcloud-payment .row-txt-re {
+    font-size: 0.875rem;
+    padding-top: 30px; }
+    .t-vcloud-payment .row-txt-re p {
+      color: #13599F;
+      padding-left: 20px;
+      padding-top: 15px;
+      margin-bottom: 30px;
+      position: relative; }
+      .t-vcloud-payment .row-txt-re p span {
+        font-weight: bold; }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment .row-txt-re p {
+          padding-left: 0;
+          padding-top: 10px;
+          margin-bottom: 10px; }
+          .t-vcloud-payment .row-txt-re p span {
+            margin-left: 20px;
+            font-weight: bold; } }
+    @media (min-width: 768px) {
+      .t-vcloud-payment .row-txt-re p {
+        padding-right: 100px; }
+        .t-vcloud-payment .row-txt-re p span {
+          position: absolute;
+          right: 0;
+          top: 15px;
+          width: 80px; } }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .row-txt-re {
+        font-size: 1rem; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .pc50 {
+      padding-left: 0;
+      padding-right: 0; } }
+  .t-vcloud-payment textarea.form-control {
+    min-height: 110px; }
+  .t-vcloud-payment #spinner {
+    position: relative; }
+    .t-vcloud-payment #spinner .spiner-button {
+      position: absolute;
+      right: 0;
+      height: 50%;
+      width: 30px;
+      background-color: #13599F;
+      background-repeat: no-repeat;
+      background-size: 15px 8px;
+      background-position: center center;
+      border-bottom: 2px solid #fff;
+      cursor: pointer; }
+      .t-vcloud-payment #spinner .spiner-button.spiner-up {
+        background-image: url(../images/caret_top.png);
+        top: 0; }
+      .t-vcloud-payment #spinner .spiner-button.spiner-down {
+        background-image: url(../images/caret_bottom.png);
+        bottom: 0;
+        border-color: #13599F; }
+    .t-vcloud-payment #spinner .form-control {
+      padding-right: 40px; }
+  .t-vcloud-payment .custom-select {
+    background: url(../images/custom_select.png) no-repeat center right 7px;
+    background-size: 8px 4px; }
+  .t-vcloud-payment .line {
+    border-top: 2px solid #D2E2F3;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    clear: both; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .line {
+        margin-top: 20px;
+        margin-bottom: 30px; } }
+  .t-vcloud-payment .bor-right {
+    border-right: 2px solid #D2E2F3; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bor-right {
+        border-right: 0px; } }
+  .t-vcloud-payment .modal-alert {
+    max-width: 600px; }
+    .t-vcloud-payment .modal-alert .modal-title {
+      color: #fff;
+      text-align: center;
+      padding-top: 30px;
+      font-size: 26px; }
+    .t-vcloud-payment .modal-alert .modal-body {
+      background-color: #13599F;
+      padding: 30px 30px 10px; }
+    .t-vcloud-payment .modal-alert .modal-content {
+      background-color: #13599F;
+      color: #fff;
+      padding-bottom: 20px; }
+    .t-vcloud-payment .modal-alert .close {
+      color: #fff;
+      background-color: #000;
+      border-radius: 50%;
+      top: -10px;
+      right: -10px;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      opacity: 1;
+      padding: 0; }
+    .t-vcloud-payment .modal-alert .btn {
+      display: block; }
+    .t-vcloud-payment .modal-alert .g-button {
+      padding-top: 0; }
+      .t-vcloud-payment .modal-alert .g-button .btn {
+        display: inline-block;
+        min-width: 120px; }
+    .t-vcloud-payment .modal-alert .txt-w {
+      padding-top: 0; }
+  .t-vcloud-payment .modal-progress .modal-title {
+    color: #fff;
+    text-align: center;
+    padding-top: 20px; }
+  .t-vcloud-payment .modal-progress .modal-body {
+    background-color: #13599F; }
+  .t-vcloud-payment .modal-progress .modal-content {
+    background-color: #13599F;
+    color: #fff;
+    padding-bottom: 20px; }
+  .t-vcloud-payment .modal-progress .close {
+    display: none; }
+  .t-vcloud-payment .modal-sm .modal-content {
+    max-width: 400px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .modal-sm .modal-content {
+        width: 90%;
+        margin: 0 auto; } }
+  .t-vcloud-payment .txt-w {
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+  .t-vcloud-payment .panel {
+    border: 1px solid #13599F; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .panel {
+        min-width: 900px; } }
+    .t-vcloud-payment .panel .panel-head {
+      background-color: #13599F;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.6875rem;
+      padding: 10px 20px; }
+    .t-vcloud-payment .panel .panel-body {
+      padding: 30px 50px; }
+    .t-vcloud-payment .panel .btn {
+      min-width: 150px; }
+    .t-vcloud-payment .panel .btn-sm {
+      min-width: 85px; }
+    .t-vcloud-payment .panel .form-control {
+      border-color: #AECBE2; }
+      .t-vcloud-payment .panel .form-control:focus {
+        border-color: #13599F; }
+    .t-vcloud-payment .panel .panel-expand {
+      margin-left: -50px;
+      margin-right: -50px; }
+      .t-vcloud-payment .panel .panel-expand table td {
+        padding-left: 60px;
+        padding-right: 60px; }
+    .t-vcloud-payment .panel .input-group {
+      padding-right: 5px;
+      margin-bottom: 25px; }
+      .t-vcloud-payment .panel .input-group .form-control {
+        height: 48px; }
+    .t-vcloud-payment .panel .panel-head {
+      font-size: 1.375rem; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .panel {
+        max-width: 90%;
+        margin: 10px auto; }
+        .t-vcloud-payment .panel .panel-head {
+          font-size: 1.125rem; }
+        .t-vcloud-payment .panel .panel-body {
+          padding-left: 25px;
+          padding-right: 25px; }
+        .t-vcloud-payment .panel .g-button {
+          margin-left: -15px;
+          margin-right: -15px; }
+        .t-vcloud-payment .panel .btn {
+          min-width: 110px; }
+        .t-vcloud-payment .panel .panel-expand {
+          margin-left: -15px;
+          margin-right: -15px; }
+          .t-vcloud-payment .panel .panel-expand table td {
+            padding-left: 15px;
+            padding-right: 15px; } }
+  @media only screen and (max-height: 760px) {
+    .t-vcloud-payment .panel-serial {
+      margin-top: 50px; } }
+  .t-vcloud-payment .panel-serial p {
+    font-size: 1.125rem;
+    color: #13599F;
+    font-weight: 700; }
+  .t-vcloud-payment .g-button {
+    text-align: center;
+    padding: 20px 0; }
+    .t-vcloud-payment .g-button .btn {
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .pt-m {
+      padding: 50px; } }
+  .t-vcloud-payment .ratio-16x9 {
+    position: relative; }
+    .t-vcloud-payment .ratio-16x9:before {
+      display: block;
+      content: "";
+      padding-top: 56.25%;
+      width: 100%; }
+  .t-vcloud-payment .txt-primary {
+    color: #f84c41; }
+  .t-vcloud-payment .bootstrap-datetimepicker-widget table td {
+    padding: 6px 10px; }
+  .t-vcloud-payment .bootstrap-datetimepicker-widget table thead tr:first-child th {
+    padding: 15px; }
+  .t-vcloud-payment .s-view-video {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 10px; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .s-view-video {
+        padding-left: 30px; } }
+    .t-vcloud-payment .s-view-video .column-view {
+      margin-bottom: 10px;
+      margin-left: 5px;
+      margin-right: 5px; }
+    @media only screen and (min-width: 1380px) {
+      .t-vcloud-payment .s-view-video.container {
+        padding-left: 100px;
+        padding-right: 70px; } }
+    .t-vcloud-payment .s-view-video.s-view-12 .column-view {
+      -ms-flex-preferred-size: 23.7%;
+      flex-basis: 23.7%; }
+    .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video {
+      top: 10px;
+      left: 10px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 {
+        font-size: 14px; }
+        .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 small {
+          font-size: 10px;
+          padding-top: 5px; }
+        .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 span {
+          padding-left: 0px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 10px; }
+    .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-top-video {
+      top: 5px;
+      right: -2px; }
+    .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .icon {
+      width: 18px;
+      height: 18px; }
+    .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .wrap-top-video {
+      height: 20px; }
+    @media only screen and (max-width: 1540px) {
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 9px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 {
+        font-size: 10px; }
+        .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 small {
+          font-size: 8px; }
+        .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video h1 span {
+          padding-left: 3px;
+          padding-right: 3px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 8px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .icon {
+        width: 16px;
+        height: 16px;
+        margin-right: 5px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .offline {
+        margin-right: 5px; }
+      .t-vcloud-payment .s-view-video.s-view-12 .bl-video-js .vjs-big-play-button {
+        background-size: 40px;
+        margin-top: 10px; } }
+    .t-vcloud-payment .s-view-video.s-view-9 .column-view {
+      -ms-flex-preferred-size: 32%;
+      flex-basis: 32%; }
+    .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video {
+      left: 10px;
+      top: 10px; }
+      .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video h1 {
+        font-size: 14px; }
+        .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video h1 small {
+          font-size: 10px;
+          padding-top: 5px; }
+        .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video h1 span {
+          padding-left: 3px;
+          padding-right: 3px; }
+      .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 12px; }
+    .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-top-video {
+      top: 5px;
+      right: 0px; }
+    .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 3px; }
+    .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .wrap-top-video {
+      height: 30px; }
+    @media only screen and (max-width: 1540px) {
+      .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 10px; }
+      .t-vcloud-payment .s-view-video.s-view-9 .bl-video-js .vjs-big-play-button {
+        background-size: 50px;
+        margin-top: 5px; } }
+    .t-vcloud-payment .s-view-video.s-view-4 .column-view {
+      -ms-flex-preferred-size: 48.5%;
+      flex-basis: 48.5%; }
+    @media only screen and (max-width: 1540px) {
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video {
+        left: 10px;
+        top: 10px; }
+        .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video h1 {
+          font-size: 18px; }
+          .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video h1 small {
+            font-size: 14px;
+            padding-top: 5px; }
+        .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video .bl-real-time {
+          font-size: 14px; }
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-top-video {
+        top: 5px;
+        right: 0px; }
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .wrap-top-video {
+        height: 50px; } }
+    @media only screen and (max-width: 1280px) {
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video h1 {
+        font-size: 14px; }
+        .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video h1 small {
+          font-size: 12px;
+          padding-top: 5px; }
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .bl-title-in-video .bl-real-time {
+        font-size: 12px; }
+      .t-vcloud-payment .s-view-video.s-view-4 .bl-video-js .icon {
+        width: 22px;
+        height: 22px; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .s-view-video .column-view {
+        -ms-flex-preferred-size: 48.5% !important;
+        flex-basis: 48.5% !important; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .s-view-video .column-view {
+        -ms-flex-preferred-size: 100% !important;
+        flex-basis: 100% !important;
+        margin-bottom: 20px; } }
+  .t-vcloud-payment .list-checkbox {
+    margin-top: 30px; }
+    .t-vcloud-payment .list-checkbox ul {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: start; }
+    .t-vcloud-payment .list-checkbox li {
+      -ms-flex-preferred-size: 33%;
+      flex-basis: 33%; }
+      .t-vcloud-payment .list-checkbox li .custom-checkbox {
+        margin-top: 7px;
+        margin-bottom: 7px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .list-checkbox li {
+        -ms-flex-preferred-size: 49%;
+        flex-basis: 49%; } }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .list-checkbox li {
+        -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; } }
+  .t-vcloud-payment .g-checked {
+    display: inline-block; }
+    .t-vcloud-payment .g-checked span {
+      display: inline-block;
+      padding: 3px 20px 3px 8px;
+      font-size: 12px;
+      color: #13599F;
+      border: 1px solid #13599F;
+      margin-right: 5px; }
+  .t-vcloud-payment .g-finish {
+    position: relative; }
+    .t-vcloud-payment .g-finish .form-control {
+      display: inline-block;
+      min-width: 50px;
+      height: 25px;
+      width: 150px;
+      vertical-align: middle;
+      padding: 5px;
+      font-size: 11px; }
+    .t-vcloud-payment .g-finish .btn-sm {
+      margin-left: 5px;
+      vertical-align: middle; }
+    .t-vcloud-payment .g-finish .txt-note {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      font-weight: normal;
+      font-size: 12px;
+      color: #F84C41;
+      width: 100%; }
+      .t-vcloud-payment .g-finish .txt-note span {
+        display: block; }
+      .t-vcloud-payment .g-finish .txt-note .active {
+        color: #09B864; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .g-finish {
+        display: block !important;
+        margin-top: 10px; } }
+  .t-vcloud-payment .mCSB_inside > .mCSB_container, .t-vcloud-payment .mCSB_container_wrapper {
+    margin-right: 0; }
+  .t-vcloud-payment .show-desktop {
+    display: none; }
+    @media (min-width: 992px) {
+      .t-vcloud-payment .show-desktop {
+        display: block; } }
+  .t-vcloud-payment .show-mobile {
+    display: none; }
+    @media (max-width: 1199.98px) {
+      .t-vcloud-payment .show-mobile {
+        display: block; } }
+  .t-vcloud-payment .s-manage-user .custom-control {
+    margin-top: 0; }
+  .t-vcloud-payment .s-manage-user .table-admin .btn {
+    margin-bottom: 5px; }
+  .t-vcloud-payment .s-manage-user .table-admin .icon-edit, .t-vcloud-payment .s-manage-user .table-admin .icon-close-sm {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    margin-left: 10px; }
+  .t-vcloud-payment .s-manage-user .table-admin .edit-name {
+    border: 1px solid #13599F;
+    font-size: 14px;
+    display: inline-block; }
+    .t-vcloud-payment .s-manage-user .table-admin .edit-name input {
+      width: 70px; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-manage-user .table-admin {
+      font-size: 14px; }
+    .t-vcloud-payment .s-manage-user .table-admin td:first-child {
+      padding-left: 220px; }
+    .t-vcloud-payment .s-manage-user .table-vbox td:first-child {
+      padding-left: 40%; } }
+  @media (max-width: 767.98px) {
+    .t-vcloud-payment .s-manage-user .table-admin {
+      font-size: 12px; }
+    .t-vcloud-payment .s-manage-user .table-admin > tbody > tr > td {
+      padding-left: 40%; }
+    .t-vcloud-payment .s-manage-user .table-admin td:first-child {
+      padding-left: 170px; }
+    .t-vcloud-payment .s-manage-user .table-admin td:last-child {
+      padding-right: 0; }
+    .t-vcloud-payment .s-manage-user .table-vbox td:first-child {
+      padding-left: 40%; } }
+  @media (max-width: 767.98px) {
+    .t-vcloud-payment .s-manage-user .table-admin-cum > tbody > tr > td {
+      padding-left: 140px !important; } }
+  .t-vcloud-payment .g-cf {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .t-vcloud-payment .txt-sucsess {
+    color: #09B864 !important; }
+  .t-vcloud-payment .txt-error {
+    color: #F84C41 !important; }
+  @media only screen and (min-width: 1440px) {
+    .t-vcloud-payment .s-vbox {
+      margin-left: -10%;
+      margin-right: -10%; } }
+  .t-vcloud-payment .bl-change-password {
+    max-width: 450px;
+    margin-top: 40px; }
+    .t-vcloud-payment .bl-change-password .g-button {
+      text-align: left; }
+    .t-vcloud-payment .bl-change-password .btn-form {
+      min-width: 120px; }
+  .t-vcloud-payment .form-group.text-only {
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #000000;
+    font-size: 0.9375rem; }
+  @media only screen and (min-width: 1000px) {
+    .t-vcloud-payment .mbb {
+      margin-right: 40px;
+      margin-bottom: -20px; } }
+  .t-vcloud-payment .mb10 {
+    margin-bottom: 10px; }
+  .t-vcloud-payment .bl-notication {
+    background-color: #E7F5FF;
+    padding: 10px 30px;
+    color: #575656;
+    font-size: 0.9375rem;
+    border: 2px solid #aecbe2;
+    margin-top: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto; }
+    .t-vcloud-payment .bl-notication .icon {
+      vertical-align: middle;
+      margin-right: 30px; }
+  .t-vcloud-payment .bl-404 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    z-index: 100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 650px;
+    height: 518px;
+    background: url(../images/bg_cloud.png) no-repeat center center;
+    background-size: 100%;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .t-vcloud-payment .bl-404 .txt-404 {
+      font-size: 7.5rem;
+      color: #13599F;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+      margin-bottom: -25px; }
+    .t-vcloud-payment .bl-404 .txt-ns {
+      color: #13599F;
+      font-size: 1.125rem;
+      font-weight: bold;
+      -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+    @media only screen and (max-width: 1440px) {
+      .t-vcloud-payment .bl-404 {
+        width: 500px;
+        height: 342px; }
+        .t-vcloud-payment .bl-404 .txt-404 {
+          font-size: 5rem;
+          margin-bottom: -10px; }
+        .t-vcloud-payment .bl-404 .txt-ns {
+          font-size: 1rem; } }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .bl-404 {
+        width: 320px;
+        height: 219px; }
+        .t-vcloud-payment .bl-404 .txt-404 {
+          font-size: 3.125rem; }
+        .t-vcloud-payment .bl-404 .txt-ns {
+          font-size: 0.75rem; }
+        .t-vcloud-payment .bl-404 .icon {
+          width: 30px;
+          height: 30px; } }
+  .t-vcloud-payment .bl-panel-control {
+    position: absolute;
+    top: 100px;
+    right: 00px;
+    z-index: 9999;
+    width: 222px;
+    border: 2px solid #13599F;
+    background-color: rgba(255, 255, 255, 0.2); }
+    .t-vcloud-payment .bl-panel-control .panel-control-head {
+      padding: 10px;
+      position: relative;
+      border-bottom: 1px solid #13599F; }
+      .t-vcloud-payment .bl-panel-control .panel-control-head h4 {
+        font-size: 14px;
+        color: #13599F;
+        margin: 0;
+        padding: 0;
+        font-weight: bold; }
+      .t-vcloud-payment .bl-panel-control .panel-control-head .icon-close-sm {
+        position: absolute;
+        top: 14px;
+        right: 0px;
+        cursor: pointer; }
+    .t-vcloud-payment .bl-panel-control .panel-control-body {
+      padding: 10px 15px; }
+    .t-vcloud-payment .bl-panel-control .bl-control {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+      .t-vcloud-payment .bl-panel-control .bl-control .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center; }
+      .t-vcloud-payment .bl-panel-control .bl-control .btn-icon .icon {
+        width: 26px;
+        height: 26px; }
+    .t-vcloud-payment .bl-panel-control .bl-zoom {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding-bottom: 10px; }
+      .t-vcloud-payment .bl-panel-control .bl-zoom .btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.1); }
+      .t-vcloud-payment .bl-panel-control .bl-zoom .btn-icon .icon {
+        width: 30px;
+        height: 30px; }
+    .t-vcloud-payment .bl-panel-control .txt {
+      text-align: center;
+      font-size: 14px;
+      color: #13599F;
+      padding: 10px 0; }
+  .t-vcloud-payment .popover {
+    border-color: transparent;
+    background-color: #F4FDFF;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: inherit;
+    min-width: 200px; }
+    .t-vcloud-payment .popover .arrow {
+      display: none; }
+    .t-vcloud-payment .popover .popover-body {
+      padding: 0px;
+      background-color: #F4FDFF; }
+    .t-vcloud-payment .popover .form-group {
+      margin-bottom: 0;
+      padding: 11px 15px;
+      border-bottom: 1px solid #D2E2F3; }
+    .t-vcloud-payment .popover .custom-checkbox {
+      margin-top: 0;
+      margin-bottom: 0; }
+    .t-vcloud-payment .popover .custom-control-label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      padding-top: 2px;
+      display: inline-block; }
+    .t-vcloud-payment .popover .btn-group-toggle {
+      width: 150px; }
+      .t-vcloud-payment .popover .btn-group-toggle .btn {
+        width: 100%;
+        background-color: #fff !important;
+        color: #000000 !important;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding-top: 3px;
+        padding-bottom: 3px; }
+        .t-vcloud-payment .popover .btn-group-toggle .btn.active {
+          background-color: #aa0000 !important; }
+    .t-vcloud-payment .popover .btn-group-vertical {
+      width: 90px;
+      height: auto;
+      padding-left: 0;
+      padding-right: 0;
+      overflow: hidden; }
+      .t-vcloud-payment .popover .btn-group-vertical .btn {
+        height: 35px;
+        line-height: 35px;
+        min-width: 50px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
+        padding: 0 5px;
+        margin-top: 0 !important;
+        position: relative; }
+        .t-vcloud-payment .popover .btn-group-vertical .btn:last-child {
+          border-bottom: 0; }
+        .t-vcloud-payment .popover .btn-group-vertical .btn:before {
+          display: inline-block;
+          content: "";
+          width: 9px;
+          height: 8px;
+          background: url(../images/icon_check2.png) no-repeat 0 0;
+          background-size: 100%;
+          margin-right: 3px;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          bottom: auto;
+          z-index: 100;
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
+          left: 18px; }
+        .t-vcloud-payment .popover .btn-group-vertical .btn.active {
+          background-color: #fff !important; }
+          .t-vcloud-payment .popover .btn-group-vertical .btn.active:before {
+            opacity: 1; }
+        .t-vcloud-payment .popover .btn-group-vertical .btn:focus, .t-vcloud-payment .popover .btn-group-vertical .btn.focus {
+          -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important; }
+  .t-vcloud-payment .txt-box {
+    padding-left: 10px;
+    font-size: 18px; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment .txt-box {
+        font-size: 14px;
+        padding-top: 10px;
+        text-align: center; } }
+  .t-vcloud-payment .btn-popover:after {
+    display: inline-block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: url(../images/dropdown.png) no-repeat;
+    background-size: 100%;
+    margin-left: 8px;
+    vertical-align: middle; }
+  .t-vcloud-payment .wrap-date {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 450px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .t-vcloud-payment .wrap-date .input-group {
+      border: 2px solid #AACAE2;
+      border-radius: 0px; }
+    .t-vcloud-payment .wrap-date .form-control {
+      height: 38px;
+      border: 0;
+      font-size: 14px; }
+    .t-vcloud-payment .wrap-date .input-group-addon {
+      padding: 5px 0px 5px 10px; }
+    .t-vcloud-payment .wrap-date span {
+      padding: 0 0px 0 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .wrap-date {
+        width: 100%; } }
+  .t-vcloud-payment .group-dt {
+    width: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 10px; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment .group-dt {
+        width: 100%; } }
+    .t-vcloud-payment .group-dt span {
+      padding-right: 10px;
+      padding-left: 10px;
+      color: #13599F;
+      font-size: 14px;
+      height: auto; }
+    .t-vcloud-payment .group-dt .form-group {
+      margin-bottom: 0; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .s-history-user {
+      margin-left: -20px;
+      margin-right: -20px; }
+      .t-vcloud-payment .s-history-user .table-admin td:first-child {
+        padding-left: 140px; }
+      .t-vcloud-payment .s-history-user .table-responsive thead {
+        display: block; }
+      .t-vcloud-payment .s-history-user .table-responsive thead tr {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+      .t-vcloud-payment .s-history-user .table-admin th:first-child {
+        padding-left: 0; }
+      .t-vcloud-payment .s-history-user .table-admin th {
+        width: 50%; } }
+  .t-vcloud-payment .bl-speed {
+    position: absolute;
+    right: 30px;
+    bottom: 87px;
+    background-color: #fff;
+    width: 110px;
+    border-radius: 3px;
+    display: none; }
+    .t-vcloud-payment .bl-speed .btn-popover {
+      width: 100%;
+      display: block;
+      padding: 10px 15px;
+      color: #000000;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      text-align: center; }
+      .t-vcloud-payment .bl-speed .btn-popover:after {
+        display: none; }
+  .t-vcloud-payment.popover-speed .popover, .t-vcloud-payment.popover-speed2 .popover {
+    min-width: 50px;
+    border-radius: 5px;
+    overflow: hidden;
+    left: -20px !important;
+    top: 80px !important; }
+    @media (max-width: 767.98px) {
+      .t-vcloud-payment.popover-speed .popover, .t-vcloud-payment.popover-speed2 .popover {
+        left: 20px !important; } }
+  .t-vcloud-payment.popover-speed2 .popover {
+    top: 80px !important; }
+  .t-vcloud-payment.popover-download-cl .popover-body {
+    padding: 10px 20px; }
+  .t-vcloud-payment.popover-download-cl .wrap-date {
+    width: auto; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment.popover-download-cl .wrap-date {
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+        .t-vcloud-payment.popover-download-cl .wrap-date span {
+          width: 60px; } }
+    .t-vcloud-payment.popover-download-cl .wrap-date .btn {
+      font-weight: normal;
+      text-transform: none;
+      font-size: 18px;
+      height: 42px;
+      line-height: 42px; }
+      @media (max-width: 991.98px) {
+        .t-vcloud-payment.popover-download-cl .wrap-date .btn {
+          margin: 10px auto;
+          width: 95%; } }
+  .t-vcloud-payment.popover-download-cl .wrap-date .input-group {
+    border: 1px solid #000000; }
+  .t-vcloud-payment.popover-download-cl .popover .form-group {
+    border: 0px; }
+  .t-vcloud-payment.popover-download-cl .wrap-date .group-d {
+    width: 220px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media (max-width: 991.98px) {
+      .t-vcloud-payment.popover-download-cl .wrap-date .group-d {
+        width: 100%; } }
+  .t-vcloud-payment.popover-download-cl .note-cl {
+    font-size: 12px;
+    padding: 5px; }
+    .t-vcloud-payment.popover-download-cl .note-cl.error {
+      color: red; }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment.popover-download-cl .popover {
+      max-width: 320px; } }
+  @media (max-width: 991.98px) {
+    .t-vcloud-payment .bl-list-week {
+      margin-bottom: 30px; } }
+  .t-vcloud-payment .bl-list-week .btn-week {
+    width: 44px;
+    height: 44px;
+    border-radius: 50% !important;
+    border: 1px solid #13599F;
+    padding: 0;
+    margin: 5px;
+    font-weight: bold; }
+    .t-vcloud-payment .bl-list-week .btn-week.active {
+      background-color: #13599F;
+      color: #fff; }
+  .t-vcloud-payment .bl-address-email {
+    border-radius: 5px;
+    border: 1px solid #13599F;
+    padding: 10px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+    .t-vcloud-payment .bl-address-email .form-control {
+      display: inline-block;
+      width: 300px;
+      margin-right: 10px; }
+  .t-vcloud-payment .g-address {
+    background-color: #13599F;
+    color: #fff;
+    padding: 5px 0px 5px 15px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-bottom: 5px; }
+    .t-vcloud-payment .g-address i {
+      margin-left: 10px; }
+  .t-vcloud-payment .s-box-notification {
+    min-height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    @media only screen and (min-width: 1440px) {
+      .t-vcloud-payment .s-box-notification {
+        min-height: 600px; } }
+  .t-vcloud-payment .box-notification {
+    text-align: center;
+    color: #13599F; }
+
+.online {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #0ECD66;
+  vertical-align: middle;
+  margin-top: -2px; }
+
+.offline {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-color: #F84C41;
+  vertical-align: middle;
+  margin-top: -2px; }
+
+.bl-real-time {
+  font-size: 1.375rem;
+  color: #fff;
+  padding: 20px 10px 0; }
+  @media only screen and (max-width: 1440px) {
+    .bl-real-time {
+      font-size: 1.125rem;
+      padding: 15px 5px 0; } }
+
+.hover-link:hover {
+  color: #13487D; }
+
+.progress-pie-chart {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #083C6F;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; }
+  .progress-pie-chart.gt-50 {
+    background-color: #13599F; }
+
+.ppc-progress {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 75px);
+  top: calc(50% - 75px);
+  width: 150px;
+  height: 150px;
+  clip: rect(0, 150px, 150px, 75px); }
+  .ppc-progress .ppc-progress-fill {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    left: calc(50% - 75px);
+    top: calc(50% - 75px);
+    width: 150px;
+    height: 150px;
+    clip: rect(0, 75px, 150px, 0);
+    background: #fff;
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg); }
+  .gt-50 .ppc-progress {
+    clip: rect(0, 75px, 150px, 0); }
+    .gt-50 .ppc-progress .ppc-progress-fill {
+      clip: rect(0, 150px, 150px, 75px);
+      background: #E5E5E5; }
+
+.ppc-percents {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  left: calc(50% - 130.43478px/2);
+  top: calc(50% - 130.43478px/2);
+  width: 130.43478px;
+  height: 130.43478px;
+  background: #13599f;
+  text-align: center;
+  display: table; }
+  .ppc-percents span {
+    display: block;
+    font-size: 1.875rem;
+    font-weight: bold;
+    color: #fff; }
+
+.pcc-percents-wrapper {
+  display: table-cell;
+  vertical-align: middle; }
