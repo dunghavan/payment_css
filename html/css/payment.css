@@ -1537,6 +1537,12 @@
     .t-vcloud-payment .row-se h4 {
       font-size: 1.125rem;
       color: #13599F; }
+    .t-vcloud-payment .row-se .col-sm-2 .btn {
+      padding-left: 5px;
+      padding-right: 5px;
+      display: block;
+      height: 40px;
+      line-height: 40px; }
   .t-vcloud-payment .list-se {
     display: -webkit-box;
     display: -ms-flexbox;
