@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>VCloudCam</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="Description here">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css">
+    <link href="css/payment.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900&amp;amp;subset=vietnamese" rel="stylesheet" type="text/css">
+    <link href="css/video-js.css" rel="stylesheet" type="text/css">
+  </head>
+  <body class="t-vcloud-payment">
+    <div class="s-wrapper">
+      <!-- NavBar-->
+      <section class="s-navbar">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            
+            <a class="navbar-brand" href="#">VCloudCam</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mr">
+                <li class="nav-item"><a class="nav-link active" href="#">TẤT CẢ CAMERA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">BẢN ĐỒ CAMERA</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUẢN TRỊ THIẾT BỊ</a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Box</a><a class="dropdown-item" href="#">Camera</a><a class="dropdown-item" href="#">Cum Camera</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUẢN TRỊ PHÂN QUYỀN</a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Người dùng</a><a class="dropdown-item" href="#">Phân quyền</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">QUẢN TRỊ DỊCH VỤ</a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Lưu trữ</a><a class="dropdown-item" href="#">Kết nối</a><a class="dropdown-item" href="#">Mã hóa</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">THIẾT LẬP CHUNG</a>
+                  <div class="dropdown-menu " aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Lịch sử truy cập</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="navbar-nav mf">
+                <li class="nav-item"><a class="btn btn-primary" href="#">MUA DỊCH VỤ</a></li>
+                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Hi, Trang</a>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Đổi mật khẩu</a><a class="dropdown-item" href="#">Đăng xuất</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </section>
+      <!-- End NavBar-->
+      <!-- Body-->
+      <section class="s-body s-body-fluid">
+        <!-- Section Dashboard-->
+        <div class="s-dashboard">
+          <div class="container">
+            <div class="row  flex-lg-row-reverse full-h">
+              <div class="col  col-body-fluid">
+                <!-- section camera-->
+                <div class="s-camera">
+                  <div class="bl-head text-right">
+                    <!-- list view-->
+                    <div class="bl-list-view">
+                      <button class="btn btn-lg btn-toggle" type="button" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <div class="handle"></div>
+                      </button>
+                      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id2"/><i class="icon icon-view1"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id3"/><i class="icon icon-view2"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id4"/><i class="icon icon-view3"></i>
+                        </label>
+                        <label class="btn btn-check">
+                          <input type="radio" name="options" autocomplete="off" id="id5"/><i class="icon icon-view4"></i>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- # list view-->
+                  </div>
+                  <div class="bl-body">
+                    <div class="bl-video-cam">
+                      <!-- player-->
+                      <div class="bl-video-js">
+                        <video class="video-js video-js vjs-default-skin" id="video-default" poster="https://vjs.zencdn.net/v/oceans.png" controls="controls" preload="none" data-setup="{ }">
+                          <source src="https://vjs.zencdn.net/v/oceans.mp4" type="video/mp4"/>
+                        </video>
+                      </div>
+                      <!-- # player-->
+                      <div class="bl-player-foot d-flex justify-content-between align-items-center">
+                        <h1>CAM NHÀ BẾP<small><span>•</span>Cụm cam nhà riêng</small></h1>
+                        <div class="bl-edit"><a class="btn btn-secondary btn-icon" href="#"><i class="icon icon-replay"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="bl-foot">
+                    <div class="txt-pag text-center">Đang xem 1 trong số 10 camera</div>
+                    <!-- pagination-->
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-pre-all"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-pre"></i></a></li>
+                      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">...</a></li>
+                      <li class="page-item"><a class="page-link" href="#">10</a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-next"></i></a></li>
+                      <li class="page-item"><a class="page-link" href="#"><i class="icon icon-next-all"></i></a></li>
+                    </ul>
+                    <!-- # pagination-->
+                  </div>
+                </div>
+                <!-- # section camera-->
+              </div>
+              <div class="col  col-nav-right">
+                <!-- navbar right-->
+                <div class="navbar-right"><a class="btn btn-square btn-secondary menu-trigger" href="#"><i class="icon icon-slide-toggle"></i></a>
+                  <div class="g-title">
+                    <h1 class="nav-title">CỤM CAMERA</h1><a class="btn btn-small btn-outline" href="#"> + Thêm cụm</a>
+                  </div>
+                  <!-- block collapse-->
+                  <div class="bl-collapse">
+                    <div class="collapse-row" data-toggle="collapse" data-target="#collapse-1" role="button" aria-expanded="false" aria-controls="collapse-1">Cụm cam nhà riêng</div>
+                    <div class="collapse show" id="collapse-1">
+                      <div class="list-group"><a class="list-group-item active" href="#">Cam nhà bếp</a><a class="list-group-item" href="#">Cam phòng khách</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- # block collapse-->
+                  <!-- block collapse-->
+                  <div class="bl-collapse">
+                    <div class="collapse-row" data-toggle="collapse" data-target="#collapse-2" role="button" aria-expanded="false" aria-controls="collapse-2">Cụm cam công ty</div>
+                    <div class="collapse show" id="collapse-2">
+                      <div class="list-group"><a class="list-group-item" href="#">Cam bãi đỗ xe</a><a class="list-group-item" href="#">Cam cửa ra vào</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- # block collapse-->
+                </div>
+                <!-- # navbar right-->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- # Section Dashboard-->
+      </section>
+      <!-- End Body-->
+    </div>
+    <!-- Modal Add -->
+    <div class="modal fade" id="modal-add-cum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-camera" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tạo cụm camera</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="label">Tên cụm:</div>
+              <input class="form-control" type="text" placeholder=""/>
+            </div>
+            <div class="list-checkbox">
+              <div class="label">Thêm camera:</div>
+              <div class="mCustomScrollbar m-scrollBar" style="max-height:35vh">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck1" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck1">Camera phòng khách 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck2" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck2">Camera phòng khách 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck3" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck3">Camera phòng khách 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck4" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck4">Camera phòng khách 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck5" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck5">Camera nhà bếp góc 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck6" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck6">Camera nhà bếp góc 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck7" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck7">Camera nhà bếp góc 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck8" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck8">Camera nhà bếp góc 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck9" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck9">Camera cửa ra vào 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck10" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck10">Camera cửa ra vào 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck11" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck11">Camera cửa ra vào 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck12" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck12">Camera cửa ra vào 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck13" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck13">Camera phòng a 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck14" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck14">Camera phòng a 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck15" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck15">Camera phòng a 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck16" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck16">Camera phòng a 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck17" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck17">Camera phòng b 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck18" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck18">Camera phòng b 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck19" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck19">Camera phòng b 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck20" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck20">Camera phòng b 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck21" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck21">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck22" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck22">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck23" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck23">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck24" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck24">Camera phòng khách</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  row footer-->
+            <div class="modal-footer"><a class="btn btn-outline" href="#" data-dismiss="modal" aria-label="Close">Huỷ</a><a class="btn btn-secondary" href="#">Lưu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- # Modal Add-->
+    <!-- Modal Edit -->
+    <div class="modal fade" id="modal-edit-cum" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg modal-camera" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Tạo cụm camera</h5>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <div class="label">Tên cụm:</div>
+              <input class="form-control" type="text" placeholder=""/>
+            </div>
+            <div class="list-checkbox">
+              <div class="label">Thêm camera:</div>
+              <div class="mCustomScrollbar m-scrollBar" style="max-height:35vh">
+                <ul class="list-unstyled">
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck1" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck1">Camera phòng khách 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck2" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck2">Camera phòng khách 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck3" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck3">Camera phòng khách 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck4" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck4">Camera phòng khách 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck5" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck5">Camera nhà bếp góc 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck6" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck6">Camera nhà bếp góc 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck7" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck7">Camera nhà bếp góc 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck8" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck8">Camera nhà bếp góc 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck9" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck9">Camera cửa ra vào 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck10" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck10">Camera cửa ra vào 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck11" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck11">Camera cửa ra vào 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck12" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck12">Camera cửa ra vào 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck13" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck13">Camera phòng a 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck14" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck14">Camera phòng a 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck15" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck15">Camera phòng a 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck16" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck16">Camera phòng a 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck17" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck17">Camera phòng b 2</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck18" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck18">Camera phòng b 3</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck19" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck19">Camera phòng b 4</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck20" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck20">Camera phòng b 1</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck21" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck21">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck22" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck22">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck23" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck23">Camera phòng khách</label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="custom-control custom-checkbox form-group">
+                      <input class="custom-control-input" type="checkbox" id="lck24" name="checkboxs"/>
+                      <label class="custom-control-label" for="lck24">Camera phòng khách</label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!--  row footer-->
+            <div class="modal-footer"><a class="btn btn-outline" href="#" data-dismiss="modal" aria-label="Close">Huỷ</a><a class="btn btn-secondary" href="#">Lưu</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- # Modal Edit-->
+    <!-- Include JS-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/popper.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/video.js" type="text/javascript"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+    <script>
+      (function() {
+      	var $body = document.body
+      	, $menu_trigger = $body.getElementsByClassName('menu-trigger')[0];
+      	if ( typeof $menu_trigger !== 'undefined' ) {
+      		$menu_trigger.addEventListener('click', function() {
+      			$body.classList.toggle("menu-active");
+      		});
+      	}
+      }).call(this);
+      if(window.innerWidth < 980){
+      	$("body").addClass("menu-active");
+      }
+      $(window).on('load',function(){
+      	$('#modal-add-cum').modal('show');
+      });
+    </script>
+  </body>
+</html>
